@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "strict": true,
+    "moduleResolution": "Node"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "swc": true
+  }
+}
