@@ -33,9 +33,12 @@ const parse = async () => {
 };
 
 const main = async () => {
+  if (process.argv.length !== 4) {
+    throw new Error('provide coords pls');
+  }
   const p = await parse();
-  const target = point([108.95789, 43.09176]);
+  const target = point(process.argv.slice(2).map(parseFloat));
   return nearestPoint(target, p);
 };
 
-main().then(console.log, console.error);
+main().then((np) => console.dir(np, { depth: null }), console.error);
