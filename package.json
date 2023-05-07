@@ -12,13 +12,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@turf/clone": "^6.5.0",
+    "@turf/clone": "6.5.0",
     "@turf/helpers": "6.5.0",
-    "@turf/invariant": "^6.5.0",
-    "@turf/meta": "^6.5.0",
+    "@turf/invariant": "6.5.0",
+    "@turf/meta": "6.5.0",
     "@xmldom/xmldom": "0.8.7",
-    "geographiclib-dms": "^2.0.0",
-    "geographiclib-geodesic": "^2.0.0",
+    "geographiclib-dms": "2.0.0",
+    "geographiclib-geodesic": "2.0.0",
     "xpath": "0.0.32"
   },
   "devDependencies": {

@@ -125,7 +125,7 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node18/-/node18-2.0.0.tgz#58b52430d00913dc26c4459fbc7f05396e47886a"
   integrity sha512-uI/B0ShkiEwTk036pncXucVlj4y11EW6mycQvCEzC1PkR2TBvdQZ5Wf96dp+XXWAc70FEDfvwTqanoaDpP6rPw==
 
-"@turf/clone@^6.5.0":
+"@turf/clone@6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@turf/clone/-/clone-6.5.0.tgz#895860573881ae10a02dfff95f274388b1cda51a"
   integrity sha512-mzVtTFj/QycXOn6ig+annKrM6ZlimreKYz6f/GSERytOpgzodbQyOgkfwru100O1KQhhjSudKK4DsQ0oyi9cTw==
@@ -137,14 +137,14 @@
   resolved "https://registry.yarnpkg.com/@turf/helpers/-/helpers-6.5.0.tgz#f79af094bd6b8ce7ed2bd3e089a8493ee6cae82e"
   integrity sha512-VbI1dV5bLFzohYYdgqwikdMVpe7pJ9X3E+dlr425wa2/sMJqYDhTO++ec38/pcPvPE6oD9WEEeU3Xu3gza+VPw==
 
-"@turf/invariant@^6.5.0":
+"@turf/invariant@6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@turf/invariant/-/invariant-6.5.0.tgz#970afc988023e39c7ccab2341bd06979ddc7463f"
   integrity sha512-Wv8PRNCtPD31UVbdJE/KVAWKe7l6US+lJItRR/HOEW3eh+U/JwRCSUl/KZ7bmjM/C+zLNoreM2TU6OoLACs4eg==
   dependencies:
     "@turf/helpers" "^6.5.0"
 
-"@turf/meta@^6.5.0":
+"@turf/meta@6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@turf/meta/-/meta-6.5.0.tgz#b725c3653c9f432133eaa04d3421f7e51e0418ca"
   integrity sha512-RrArvtsV0vdsCBegoBtOalgdSOfkBrTJ07VkpiCnq/491W67hnMWmDu7e6Ztw0C3WldRYTXkg3SumfdzZxLBHA==
@@ -290,12 +290,12 @@ find-up@^4.1.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-geographiclib-dms@^2.0.0:
+geographiclib-dms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/geographiclib-dms/-/geographiclib-dms-2.0.0.tgz#956a828649a1ffe044e13f5651803a0ef166a671"
   integrity sha512-DQ4j4/gSYle7IFjGeGP9KWy/KiBuY8qleJLHVrOE/z7fdoxDVmdYY/opJMOAFGWFRKUbQ5+g1Uws1FFY4aMxhQ==
 
-geographiclib-geodesic@^2.0.0:
+geographiclib-geodesic@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/geographiclib-geodesic/-/geographiclib-geodesic-2.0.0.tgz#3dcdc5a54ccbd46858b9281d9cdb2597dec95069"
   integrity sha512-qRE11UEF3Zn9VwDFf+Q1ZNn4VW2xwZWeAPiFRrKVSKn2K5lds1jOxhxgFJwbKh5YV58ME6+LGiRtm4A0CjFyiQ==
