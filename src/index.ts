@@ -79,10 +79,20 @@ const getData = async (): Promise<Data> => {
   }
 };
 
+const formatCoord = (pt: Coord): string => {
+  const [lng, lat] = getCoord(pt);
+  return [
+    // @ts-ignore
+    DMS.Encode(lat, DMS.SECOND, 0, DMS.LATITUDE),
+    // @ts-ignore
+    DMS.Encode(lng, DMS.SECOND, 0, DMS.LONGITUDE),
+  ].join(' ');
+};
+
 const nearestPoint = <P>(
   targetPoint: Coord,
   points: FeatureCollection<Point>
-): Feature<Point, P & { distance: number }> => {
+): Feature<Point, P & { distance: number; strCoord: string }> => {
   let min = Infinity;
   let idx = 0;
   const targetCoord = getCoord(targetPoint) as [number, number];
@@ -107,6 +117,7 @@ const nearestPoint = <P>(
     properties: {
       ...result.properties,
       distance: min,
+      strCoord: formatCoord(result),
     },
   };
 };
