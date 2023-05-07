@@ -54,11 +54,11 @@ const parse = async (): Promise<Data> => {
     nodes.map((node) => {
       const lat = select('.//geodata/@latitude', node, true) as Attr;
       const lng = select('.//geodata/@longitude', node, true) as Attr;
-      const title = select('.//title', node, true) as Node;
-      const url = select('.//publicUrl', node, true) as Node;
+      const title = select('.//title', node, true) as Node | undefined;
+      const url = select('.//publicUrl', node, true) as Node | undefined;
       return point([Number(lng.value), Number(lat.value)], {
-        url: url.firstChild?.toString(),
-        title: title.firstChild?.toString(),
+        url: url?.firstChild?.toString(),
+        title: title?.firstChild?.toString(),
       });
     })
   );
