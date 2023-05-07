@@ -1,7 +1,4 @@
-import { DOMParser } from '@xmldom/xmldom';
-import { join as joinPath } from 'node:path';
-import { readFile } from 'node:fs/promises';
-import { select } from 'xpath';
+import clone from '@turf/clone';
 import {
   Coord,
   Feature,
@@ -10,20 +7,44 @@ import {
   Point,
   point,
 } from '@turf/helpers';
+import { getCoord } from '@turf/invariant';
+import { featureEach } from '@turf/meta';
+import { DOMParser } from '@xmldom/xmldom';
 import DMS from 'geographiclib-dms';
 import geodesic from 'geographiclib-geodesic';
-import { featureEach } from '@turf/meta';
-import clone from '@turf/clone';
-import { getCoord } from '@turf/invariant';
+import { select } from 'xpath';
+import { readFile, stat, writeFile } from 'node:fs/promises';
+import { join as joinPath } from 'node:path';
 
 const selector =
   "//all_media/media[geodata/@latitude and string-length(geodata/@latitude)!=0 and privacy/@public='1']";
 
-const parse = async () => {
-  const xml = await readFile(
-    joinPath(process.env.HOME!, 'photos.xml'),
-    'utf-8'
-  );
+const jsonFilename = joinPath(process.env.HOME!, 'photos.json');
+const xmlFilename = joinPath(process.env.HOME!, 'photos.xml');
+
+interface Props {
+  url?: string;
+  title?: string;
+}
+
+type Data = FeatureCollection<Point, Props>;
+
+const getMtime = async (fn: string): Promise<number | null> => {
+  try {
+    const stats = await stat(fn);
+    return stats.mtimeMs;
+  } catch (e) {
+    return null;
+  }
+};
+
+const read = async (): Promise<Data> => {
+  const data = await readFile(jsonFilename, 'utf-8');
+  return JSON.parse(data) as Data;
+};
+
+const parse = async (): Promise<Data> => {
+  const xml = await readFile(xmlFilename, 'utf-8');
 
   const doc = new DOMParser().parseFromString(xml, 'application/xml');
 
@@ -43,15 +64,30 @@ const parse = async () => {
   );
 };
 
+const getData = async (): Promise<Data> => {
+  const [jsonTs, xmlTs] = await Promise.all(
+    [jsonFilename, xmlFilename].map(getMtime)
+  );
+  if (!xmlTs) {
+    throw new Error('no xml file');
+  } else if (!jsonTs || jsonTs < xmlTs) {
+    const data = await parse();
+    await writeFile(jsonFilename, JSON.stringify(data), 'utf-8');
+    return data;
+  } else {
+    return read();
+  }
+};
+
 const nearestPoint = <P>(
   targetPoint: Coord,
   points: FeatureCollection<Point>
 ): Feature<Point, P & { distance: number }> => {
   let min = Infinity;
   let idx = 0;
-  const targetCoord = getCoord(targetPoint);
+  const targetCoord = getCoord(targetPoint) as [number, number];
   featureEach(points, (pt, i) => {
-    const coord = getCoord(pt);
+    const coord = getCoord(pt) as [number, number];
     const geo = geodesic.Geodesic.WGS84.Inverse(
       targetCoord[1],
       targetCoord[0],
@@ -79,7 +115,7 @@ const main = async () => {
   if (process.argv.length !== 4) {
     throw new Error('provide coords pls');
   }
-  const p = await parse();
+  const p = await getData();
   // @ts-ignore
   const dms = DMS.DecodeLatLon(...(process.argv.slice(2) as [string, string]));
   const target = point([dms.lon, dms.lat]);
