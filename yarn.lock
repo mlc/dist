@@ -132,14 +132,6 @@
   dependencies:
     "@turf/helpers" "^6.5.0"
 
-"@turf/distance@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@turf/distance/-/distance-6.5.0.tgz#21f04d5f86e864d54e2abde16f35c15b4f36149a"
-  integrity sha512-xzykSLfoURec5qvQJcfifw/1mJa+5UwByZZ5TZ8iaqjGYN0vomhV9aiSLeYdUGtYRESZ+DYC/OzY+4RclZYgMg==
-  dependencies:
-    "@turf/helpers" "^6.5.0"
-    "@turf/invariant" "^6.5.0"
-
 "@turf/helpers@6.5.0", "@turf/helpers@^6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@turf/helpers/-/helpers-6.5.0.tgz#f79af094bd6b8ce7ed2bd3e089a8493ee6cae82e"
@@ -158,16 +150,6 @@
   integrity sha512-RrArvtsV0vdsCBegoBtOalgdSOfkBrTJ07VkpiCnq/491W67hnMWmDu7e6Ztw0C3WldRYTXkg3SumfdzZxLBHA==
   dependencies:
     "@turf/helpers" "^6.5.0"
-
-"@turf/nearest-point@6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@turf/nearest-point/-/nearest-point-6.5.0.tgz#2f1781c26ff3f054005d4ff352042973318b92f1"
-  integrity sha512-fguV09QxilZv/p94s8SMsXILIAMiaXI5PATq9d7YWijLxWUj6Q/r43kxyoi78Zmwwh1Zfqz9w+bCYUAxZ5+euA==
-  dependencies:
-    "@turf/clone" "^6.5.0"
-    "@turf/distance" "^6.5.0"
-    "@turf/helpers" "^6.5.0"
-    "@turf/meta" "^6.5.0"
 
 "@types/minimatch@^3.0.3":
   version "3.0.5"
@@ -307,6 +289,16 @@ find-up@^4.1.0:
   dependencies:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
+
+geographiclib-dms@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/geographiclib-dms/-/geographiclib-dms-2.0.0.tgz#956a828649a1ffe044e13f5651803a0ef166a671"
+  integrity sha512-DQ4j4/gSYle7IFjGeGP9KWy/KiBuY8qleJLHVrOE/z7fdoxDVmdYY/opJMOAFGWFRKUbQ5+g1Uws1FFY4aMxhQ==
+
+geographiclib-geodesic@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/geographiclib-geodesic/-/geographiclib-geodesic-2.0.0.tgz#3dcdc5a54ccbd46858b9281d9cdb2597dec95069"
+  integrity sha512-qRE11UEF3Zn9VwDFf+Q1ZNn4VW2xwZWeAPiFRrKVSKn2K5lds1jOxhxgFJwbKh5YV58ME6+LGiRtm4A0CjFyiQ==
 
 get-stream@^5.0.0:
   version "5.2.0"

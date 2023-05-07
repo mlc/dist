@@ -2,8 +2,19 @@ import { DOMParser } from '@xmldom/xmldom';
 import { join as joinPath } from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { select } from 'xpath';
-import { featureCollection, point } from '@turf/helpers';
-import nearestPoint from '@turf/nearest-point';
+import {
+  Coord,
+  Feature,
+  FeatureCollection,
+  featureCollection,
+  Point,
+  point,
+} from '@turf/helpers';
+import DMS from 'geographiclib-dms';
+import geodesic from 'geographiclib-geodesic';
+import { featureEach } from '@turf/meta';
+import clone from '@turf/clone';
+import { getCoord } from '@turf/invariant';
 
 const selector =
   "//all_media/media[geodata/@latitude and string-length(geodata/@latitude)!=0 and privacy/@public='1']";
@@ -32,12 +43,46 @@ const parse = async () => {
   );
 };
 
+const nearestPoint = <P>(
+  targetPoint: Coord,
+  points: FeatureCollection<Point>
+): Feature<Point, P & { distance: number }> => {
+  let min = Infinity;
+  let idx = 0;
+  const targetCoord = getCoord(targetPoint);
+  featureEach(points, (pt, i) => {
+    const coord = getCoord(pt);
+    const geo = geodesic.Geodesic.WGS84.Inverse(
+      targetCoord[1],
+      targetCoord[0],
+      coord[1],
+      coord[0],
+      geodesic.Geodesic.DISTANCE
+    );
+    const dist = geo.s12! / 1000;
+    if (dist < min) {
+      min = dist;
+      idx = i;
+    }
+  });
+  const result = clone(points.features[idx]);
+  return {
+    ...result,
+    properties: {
+      ...result.properties,
+      distance: min,
+    },
+  };
+};
+
 const main = async () => {
   if (process.argv.length !== 4) {
     throw new Error('provide coords pls');
   }
   const p = await parse();
-  const target = point(process.argv.slice(2).map(parseFloat));
+  // @ts-ignore
+  const dms = DMS.DecodeLatLon(...(process.argv.slice(2) as [string, string]));
+  const target = point([dms.lon, dms.lat]);
   return nearestPoint(target, p);
 };
 
