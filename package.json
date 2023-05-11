@@ -12,7 +12,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@turf/clone": "6.5.0",
     "@turf/helpers": "6.5.0",
     "@turf/invariant": "6.5.0",
     "@turf/meta": "6.5.0",

@@ -1,5 +1,11 @@
-import clone from '@turf/clone';
-import { Coord, Feature, FeatureCollection, Point, point } from '@turf/helpers';
+import {
+  Coord,
+  Feature,
+  featureCollection,
+  FeatureCollection,
+  Point,
+  point,
+} from '@turf/helpers';
 import { getCoord } from '@turf/invariant';
 import { featureEach } from '@turf/meta';
 import DMS from 'geographiclib-dms';
@@ -17,20 +23,20 @@ const formatCoord = (pt: Coord): string => {
   const [lng, lat] = getCoord(pt);
   return [
     // @ts-ignore
-    DMS.Encode(lat, DMS.SECOND, 0, DMS.LATITUDE),
+    DMS.Encode(lat, DMS.DEGREE, 4, DMS.LATITUDE),
     // @ts-ignore
-    DMS.Encode(lng, DMS.SECOND, 0, DMS.LONGITUDE),
+    DMS.Encode(lng, DMS.DEGREE, 4, DMS.LONGITUDE),
   ].join(' ');
 };
 
-const nearestPoint = <P>(
+const decoratePoints = <P extends object>(
   targetPoint: Coord,
-  points: FeatureCollection<Point>
-): Feature<Point, P & { distance: number; strCoord: string }> => {
-  let min = Infinity;
-  let idx = 0;
+  points: FeatureCollection<Point, P>
+): FeatureCollection<Point, P & { distance: number; strCoord: string }> => {
   const targetCoord = getCoord(targetPoint) as [number, number];
-  featureEach(points, (pt, i) => {
+  const result: Feature<Point, P & { distance: number; strCoord: string }>[] =
+    [];
+  featureEach(points, (pt) => {
     const coord = getCoord(pt) as [number, number];
     const geo = geodesic.Geodesic.WGS84.Inverse(
       targetCoord[1],
@@ -39,32 +45,33 @@ const nearestPoint = <P>(
       coord[0],
       geodesic.Geodesic.DISTANCE
     );
-    const dist = geo.s12! / 1000;
-    if (dist < min) {
-      min = dist;
-      idx = i;
-    }
+    const distance = geo.s12! / 1000;
+    result.push(
+      point(coord, {
+        ...pt.properties,
+        distance,
+        strCoord: formatCoord(coord),
+      })
+    );
   });
-  const result = clone(points.features[idx]);
-  return {
-    ...result,
-    properties: {
-      ...result.properties,
-      distance: min,
-      strCoord: formatCoord(result),
-    },
-  };
+  return featureCollection(result);
 };
 
 const main = async () => {
-  if (process.argv.length !== 4) {
+  const argc = process.argv.length;
+  if (argc < 4 || argc > 5) {
     throw new Error('provide coords pls');
   }
   const p = await getData();
   // @ts-ignore
-  const dms = DMS.DecodeLatLon(...(process.argv.slice(2) as [string, string]));
+  const dms = DMS.DecodeLatLon(
+    ...(process.argv.slice(2, 4) as [string, string])
+  );
   const target = point([dms.lon, dms.lat]);
-  return nearestPoint(target, p);
+  const points = decoratePoints(target, p).features.sort(
+    ({ properties: { distance: a } }, { properties: { distance: b } }) => a - b
+  );
+  return argc === 5 ? points.slice(0, parseInt(process.argv[4])) : points[0];
 };
 
 main().then((np) => console.dir(np, { depth: null }), console.error);
