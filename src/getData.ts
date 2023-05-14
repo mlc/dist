@@ -38,9 +38,15 @@ const parse = async (): Promise<Data> => {
       const lng = select('.//geodata/@longitude', node, true) as Attr;
       const title = select('.//title', node, true) as Node | undefined;
       const url = select('.//publicUrl', node, true) as Node | undefined;
+      const imgUrl = select(
+        './/image[@type="Large"]/@publicUrl',
+        node,
+        true
+      ) as Attr | undefined;
       return point([Number(lng.value), Number(lat.value)], {
         url: url?.firstChild?.toString(),
         title: title?.firstChild?.toString(),
+        imgUrl: imgUrl?.value,
       });
     })
   );

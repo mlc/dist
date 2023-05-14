@@ -15,6 +15,7 @@ import getData from './getData';
 export interface Props {
   url?: string;
   title?: string;
+  imgUrl?: string;
 }
 
 export type Data = FeatureCollection<Point, Props>;
