@@ -8,7 +8,7 @@ import {
 } from '@turf/helpers';
 import { getCoord } from '@turf/invariant';
 import { featureEach } from '@turf/meta';
-import DMS from 'geographiclib-dms';
+import * as DMS from 'geographiclib-dms';
 import geodesic from 'geographiclib-geodesic';
 import getData from './getData';
 
@@ -23,9 +23,7 @@ export type Data = FeatureCollection<Point, Props>;
 const formatCoord = (pt: Coord): string => {
   const [lng, lat] = getCoord(pt);
   return [
-    // @ts-ignore
     DMS.Encode(lat, DMS.DEGREE, 4, DMS.LATITUDE),
-    // @ts-ignore
     DMS.Encode(lng, DMS.DEGREE, 4, DMS.LONGITUDE),
   ].join(' ');
 };
@@ -64,7 +62,6 @@ const main = async () => {
     throw new Error('provide coords pls');
   }
   const p = await getData();
-  // @ts-ignore
   const dms = DMS.DecodeLatLon(
     ...(process.argv.slice(2, 4) as [string, string])
   );
