@@ -11,14 +11,11 @@ const selector =
 const jsonFilename = joinPath(process.env.HOME!, 'photos.json');
 const xmlFilename = joinPath(process.env.HOME!, 'photos.xml');
 
-const getMtime = async (fn: string): Promise<number | null> => {
-  try {
-    const stats = await stat(fn);
-    return stats.mtimeMs;
-  } catch (e) {
-    return null;
-  }
-};
+const getMtime = (fn: string): Promise<number | null> =>
+  stat(fn).then(
+    ({ mtimeMs }) => mtimeMs,
+    (e) => ('code' in e && e.code === 'ENOENT' ? null : Promise.reject(e))
+  );
 
 const read = async (): Promise<Data> => {
   const data = await readFile(jsonFilename, 'utf-8');

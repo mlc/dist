@@ -8,7 +8,7 @@ import {
 } from '@turf/helpers';
 import { getCoord } from '@turf/invariant';
 import { featureEach } from '@turf/meta';
-import * as DMS from 'geographiclib-dms';
+import DMS from 'geographiclib-dms';
 import geodesic from 'geographiclib-geodesic';
 import getData from './getData';
 
