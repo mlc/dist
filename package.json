@@ -16,7 +16,7 @@
     "@turf/helpers": "6.5.0",
     "@turf/invariant": "6.5.0",
     "@turf/meta": "6.5.0",
-    "@xmldom/xmldom": "0.8.7",
+    "@xmldom/xmldom": "0.8.8",
     "geographiclib-dms": "2.0.0",
     "geographiclib-geodesic": "2.0.0",
     "xpath": "0.0.32"
