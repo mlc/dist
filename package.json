@@ -13,6 +13,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fast-csv/parse": "^4.3.6",
+    "@turf/distance": "^6.5.0",
     "@turf/helpers": "6.5.0",
     "@turf/invariant": "6.5.0",
     "@turf/meta": "6.5.0",
