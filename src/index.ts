@@ -9,8 +9,8 @@ import {
 import { getCoord } from '@turf/invariant';
 import { featureEach } from '@turf/meta';
 import DMS from 'geographiclib-dms';
-import geodesic from 'geographiclib-geodesic';
 import getData from './getData';
+import { distance as getDist, formatCoord } from './util';
 
 export interface Props {
   url?: string;
@@ -20,14 +20,6 @@ export interface Props {
 
 export type Data = FeatureCollection<Point, Props>;
 
-const formatCoord = (pt: Coord): string => {
-  const [lng, lat] = getCoord(pt);
-  return [
-    DMS.Encode(lat, DMS.DEGREE, 4, DMS.LATITUDE),
-    DMS.Encode(lng, DMS.DEGREE, 4, DMS.LONGITUDE),
-  ].join(' ');
-};
-
 const decoratePoints = <P extends object>(
   targetPoint: Coord,
   points: FeatureCollection<Point, P>
@@ -36,20 +28,12 @@ const decoratePoints = <P extends object>(
   const result: Feature<Point, P & { distance: number; strCoord: string }>[] =
     [];
   featureEach(points, (pt) => {
-    const coord = getCoord(pt) as [number, number];
-    const geo = geodesic.Geodesic.WGS84.Inverse(
-      targetCoord[1],
-      targetCoord[0],
-      coord[1],
-      coord[0],
-      geodesic.Geodesic.DISTANCE
-    );
-    const distance = geo.s12! / 1000;
+    const distance = getDist(targetCoord, pt);
     result.push(
-      point(coord, {
+      point(getCoord(pt), {
         ...pt.properties,
         distance,
-        strCoord: formatCoord(coord),
+        strCoord: formatCoord(pt),
       })
     );
   });
