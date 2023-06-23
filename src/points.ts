@@ -10,6 +10,14 @@ import { distance, formatCoord } from './util';
 
 type FoundFile = [round: string, data: Buffer];
 
+interface ScoreRecord {
+  round: number;
+  name: string;
+  coord: string;
+  dist: number;
+  score: number;
+}
+
 const addRound =
   (round: string) =>
   (buf: Buffer): FoundFile =>
@@ -49,9 +57,9 @@ async function* findFiles(dirname: string): AsyncGenerator<FoundFile> {
 // go through the files and write the data to a CSV
 const parse = async () => {
   const parser = new DOMParser();
-  const csv = formatCsv({ headers: true });
-  csv.pipe(createWriteStream('scores.csv'));
+  const rows: ScoreRecord[] = [];
   for await (const [round, file] of findFiles('kmzs')) {
+    console.log(round);
     const doc = parser.parseFromString(file.toString('utf-8'));
     const data = togeojson.kml(doc) as FeatureCollection<
       Point,
@@ -65,11 +73,18 @@ const parse = async () => {
         const score = Math.round(5000 * Math.exp(-dist / 2000));
         const coord = formatCoord(feature);
         for (const name of feature.properties.name.split(/;\s+/)) {
-          csv.write({ round, name, coord, dist, score });
+          rows.push({ round: Number(round), name, coord, dist, score });
         }
       }
     });
   }
+  rows.sort(
+    ({ round: around, score: ascore }, { round: bround, score: bscore }) =>
+      around - bround || bscore - ascore
+  );
+  const csv = formatCsv({ headers: true });
+  csv.pipe(createWriteStream('scores.csv'));
+  rows.forEach((row) => csv.write(row));
   csv.end();
 };
 
