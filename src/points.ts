@@ -18,6 +18,30 @@ interface ScoreRecord {
   score: number;
 }
 
+const bannedUsers = new Set<string>(['DrWhoFanJ']);
+
+const nicknamedUsers = new Map<string, string>([
+  ['36.874561, 27.256751', 'Nova'],
+  ['CallMeTheOceanMan', 'CallMeOceanMan'],
+  ['Jaydoo', 'JayDoo909'],
+  ['JayDoo', 'JayDoo909'],
+  ['Jeune Herisson', 'Jeune Hérisson'],
+  ['Jeune Herison', 'Jeune Hérisson'],
+  ['JLyons', 'Jake Lyons'],
+  ['Mimi_', 'Mimi'],
+  ['Nobody', 'Nobody1300'],
+  ['Olli', 'Olli7'],
+  ['Rumi', 'Rumilb'],
+  ['Schludy', 'schludy'],
+  ['Sheepie', 'Sheepie1204'],
+  ['Speedy Gwen', 'Speedy__Gwen'],
+  ['Toro3317', 'Toro'],
+  ['toro3317', 'Toro'],
+  ['UCLA Jesus', 'UCLA_Jesus'],
+  ['UltraTech', 'UltraTech66'],
+  ['Zoe', 'Zoe//SpottedPandas'],
+]);
+
 const addRound =
   (round: string) =>
   (buf: Buffer): FoundFile =>
@@ -54,6 +78,11 @@ async function* findFiles(dirname: string): AsyncGenerator<FoundFile> {
   }
 }
 
+const cleanName = (name: string): string => {
+  const withoutSpaces = name.trim();
+  return nicknamedUsers.get(withoutSpaces) ?? withoutSpaces;
+};
+
 // go through the files and write the data to a CSV
 const parse = async () => {
   const parser = new DOMParser();
@@ -73,7 +102,15 @@ const parse = async () => {
         const score = Math.round(5000 * Math.exp(-dist / 2000));
         const coord = formatCoord(feature);
         for (const name of feature.properties.name.split(/;\s+/)) {
-          rows.push({ round: Number(round), name, coord, dist, score });
+          if (!bannedUsers.has(name)) {
+            rows.push({
+              round: Number(round),
+              name: cleanName(name),
+              coord,
+              dist,
+              score,
+            });
+          }
         }
       }
     });
