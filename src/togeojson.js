@@ -10,9 +10,11 @@
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-var toGeoJSON = (function () {
-  'use strict';
+'use strict';
 
+const { XMLSerializer } = require('@xmldom/xmldom');
+
+var toGeoJSON = (function () {
   var removeSpace = /\s*/g,
     trimSpace = /^\s*|\s*$/g,
     splitSpace = /\s+/;
@@ -116,18 +118,7 @@ var toGeoJSON = (function () {
     };
   }
 
-  var serializer;
-  if (typeof XMLSerializer !== 'undefined') {
-    /* istanbul ignore next */
-    serializer = new XMLSerializer();
-    // only require xmldom in a node environment
-  } else if (
-    typeof exports === 'object' &&
-    typeof process === 'object' &&
-    !process.browser
-  ) {
-    serializer = new (require('@xmldom/xmldom').XMLSerializer)();
-  }
+  var serializer = new XMLSerializer();
   function xml2str(str) {
     // IE9 will create a new XMLSerializer but it'll crash immediately.
     // This line is ignored because we don't run coverage tests in IE9
@@ -515,4 +506,4 @@ var toGeoJSON = (function () {
   return t;
 })();
 
-if (typeof module !== 'undefined') module.exports = toGeoJSON;
+module.exports = toGeoJSON;
