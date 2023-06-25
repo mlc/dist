@@ -97,25 +97,27 @@ const parse = async () => {
       { name: string }
     >;
     const target = data.features[0];
-    data.features.forEach((feature, i) => {
-      if (i > 0) {
+    rows.push(
+      ...data.features.slice(1).flatMap((feature, i) => {
         const dist = distance(target, feature);
         // https://www.reddit.com/r/geoguessr/comments/6fe4fi/2_weekly_random_11_locations_added_in_the_past_2/diie3qf/
         const score = Math.round(5000 * Math.exp(-dist / 2000));
         const coord = formatCoord(feature);
-        for (const name of feature.properties.name.split(/;\s+/)) {
-          if (!bannedUsers.has(name)) {
-            rows.push({
+        return feature.properties.name
+          .split(/;\s+/)
+          .map(cleanName)
+          .filter((name) => !bannedUsers.has(name))
+          .map(
+            (name): ScoreRecord => ({
               round: Number(round),
-              name: cleanName(name),
+              name,
               coord,
               dist,
               score,
-            });
-          }
-        }
-      }
-    });
+            })
+          );
+      })
+    );
   }
   rows.sort(
     ({ round: around, score: ascore }, { round: bround, score: bscore }) =>
