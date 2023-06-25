@@ -24,3 +24,13 @@ export const formatCoord = (pt: Coord): string => {
     DMS.Encode(lng, DMS.DEGREE, 4, DMS.LONGITUDE),
   ].join(' ');
 };
+
+export const decodeCoord = (coords: string): { lat: number; lon: number } => {
+  const components = coords
+    .replace(/ +([NESW])/giu, (_, x) => x)
+    .split(/[, ]+/);
+  if (components.length !== 2) {
+    throw new Error(`unable to parse ${coords}`);
+  }
+  return DMS.DecodeLatLon(...(components as [string, string]));
+};

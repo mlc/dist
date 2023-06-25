@@ -3,6 +3,7 @@ import DMS from 'geographiclib-dms';
 import { Geodesic } from 'geographiclib-geodesic';
 import { featureCollection, Point, point } from '@turf/helpers';
 import distance from '@turf/distance';
+import { decodeCoord } from './util';
 
 interface Row {
   coords: string;
@@ -17,26 +18,16 @@ const getCsv = (fn: string) =>
       .on('end', () => resolve(rows));
   });
 
-const decode = (coords: string) => {
-  const components = coords
-    .replace(/ +([NESW])/giu, (_, x) => x)
-    .split(/[, ]+/);
-  if (components.length !== 2) {
-    throw new Error(`unable to parse ${coords}`);
-  }
-  return DMS.DecodeLatLon(...(components as [string, string]));
-};
-
 const medals = ['#d6af36', '#d7d7d7', '#a77044'];
 
 const colorFor = (position: number): string => medals[position] ?? '#0000af';
 
 const main = async () => {
   const input = await getCsv(process.argv[2]);
-  const target = decode(process.argv[3]);
+  const target = decodeCoord(process.argv[3]);
   const features = input
     .map(({ coords, ...rest }) => {
-      const { lat, lon } = decode(coords);
+      const { lat, lon } = decodeCoord(coords);
       const dist =
         Geodesic.WGS84.Inverse(
           target.lat,

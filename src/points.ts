@@ -47,6 +47,17 @@ const addRound =
   (buf: Buffer): FoundFile =>
     [round, buf];
 
+const getZipEntry = (entry: AdmZip.IZipEntry): Promise<Buffer> =>
+  new Promise((resolve, reject) =>
+    entry.getDataAsync((data, err) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    })
+  );
+
 // look through a directory and yield found KML files, looking inside KMZs
 // to get the underlying document if needed
 async function* findFiles(dirname: string): AsyncGenerator<FoundFile> {
@@ -61,16 +72,7 @@ async function* findFiles(dirname: string): AsyncGenerator<FoundFile> {
         const zip = new AdmZip(filename);
         for (const entry of zip.getEntries()) {
           if (entry.name.endsWith('.kml')) {
-            const data = new Promise<Buffer>((resolve, reject) =>
-              entry.getDataAsync((data, err) => {
-                if (err) {
-                  reject(err);
-                } else {
-                  resolve(data);
-                }
-              })
-            );
-            yield data.then(addRound(round));
+            yield getZipEntry(entry).then(addRound(round));
           }
         }
       }

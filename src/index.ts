@@ -10,7 +10,7 @@ import { getCoord } from '@turf/invariant';
 import { featureEach } from '@turf/meta';
 import DMS from 'geographiclib-dms';
 import getData from './getData';
-import { distance as getDist, formatCoord } from './util';
+import { decodeCoord, distance as getDist, formatCoord } from './util';
 
 export interface Props {
   url?: string;
@@ -42,18 +42,16 @@ const decoratePoints = <P extends object>(
 
 const main = async () => {
   const argc = process.argv.length;
-  if (argc < 4 || argc > 5) {
+  if (argc < 3 || argc > 4) {
     throw new Error('provide coords pls');
   }
   const p = await getData();
-  const dms = DMS.DecodeLatLon(
-    ...(process.argv.slice(2, 4) as [string, string])
-  );
+  const dms = decodeCoord(process.argv[2]);
   const target = point([dms.lon, dms.lat]);
   const points = decoratePoints(target, p).features.sort(
     ({ properties: { distance: a } }, { properties: { distance: b } }) => a - b
   );
-  return argc === 5 ? points.slice(0, parseInt(process.argv[4])) : points[0];
+  return argc === 4 ? points.slice(0, parseInt(process.argv[3])) : points[0];
 };
 
 main().then((np) => console.dir(np, { depth: null }), console.error);

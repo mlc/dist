@@ -14,7 +14,7 @@ Find the closest of your photos to a given location.
 ## Use
 
 ```
-yarn calc 40:43:35N 73:58:54W
+yarn calc '40:43:35N 73:58:54W'
 ```
 
 The lat/lng parameters can be in any format and order supported by [geographiclib][]. If you specify hemispheres (as `N`, `S`, `E`, `W`), you can write the coordinates in any order; if you use numbers with `-` for the South and Western hemispheres, the latitude comes before the longitude.
