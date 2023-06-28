@@ -29,6 +29,7 @@ const nicknamedUsers = new Map<string, string>([
   ['Jeune Herison', 'Jeune Hérisson'],
   ['JLyons', 'Jake Lyons'],
   ['Mimi_', 'Mimi'],
+  ['mimi_', 'Mimi'],
   ['Nobody', 'Nobody1300'],
   ['Olli', 'Olli7'],
   ['Rumi', 'Rumilb'],
