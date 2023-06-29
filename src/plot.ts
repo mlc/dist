@@ -1,9 +1,9 @@
+import { spawn } from 'node:child_process';
+import { stdout } from 'node:process';
 import { parseFile } from '@fast-csv/parse';
-import DMS from 'geographiclib-dms';
-import { Geodesic } from 'geographiclib-geodesic';
-import { featureCollection, Point, point } from '@turf/helpers';
-import distance from '@turf/distance';
-import { decodeCoord } from './util';
+import { Feature, feature, featureCollection, Point } from '@turf/helpers';
+import turfDist from '@turf/distance';
+import { decodeCoord, distance } from './util';
 
 interface Row {
   coords: string;
@@ -22,36 +22,53 @@ const medals = ['#d6af36', '#d7d7d7', '#a77044'];
 
 const colorFor = (position: number): string => medals[position] ?? '#0000af';
 
+const copy = (data: string) =>
+  new Promise<void>((resolve, reject) => {
+    const process = spawn('xclip', ['-i', '-selection', 'clipboard'], {
+      stdio: ['pipe', 'inherit', 'inherit'],
+    });
+    process.on('error', (e) => reject(e));
+    process.on('close', (code) => {
+      if (code === 0) {
+        resolve();
+      } else {
+        reject(new Error(`process exited with ${code}`));
+      }
+    });
+    process.stdin.write(Buffer.from(data, 'utf-8'));
+    process.stdin.end();
+  });
+
 const main = async () => {
   const input = await getCsv(process.argv[2]);
   const target = decodeCoord(process.argv[3]);
-  const features = input
+  const features: Feature<Point, {}>[] = input
     .map(({ coords, ...rest }) => {
-      const { lat, lon } = decodeCoord(coords);
-      const dist =
-        Geodesic.WGS84.Inverse(
-          target.lat,
-          target.lon,
-          lat,
-          lon,
-          Geodesic.DISTANCE
-        ).s12! / 1000;
-      const sphericalDistance = distance([target.lon, target.lat], [lon, lat]);
-      return point([lon, lat], { ...rest, dist, sphericalDistance });
+      const us = decodeCoord(coords);
+      const dist = distance(target, us);
+      const sphericalDistance = turfDist(target, us);
+      return feature(us, { ...rest, dist, sphericalDistance });
     })
     .sort(({ properties: { dist: a } }, { properties: { dist: b } }) => a - b)
     .map((pt, idx) => ({
       ...pt,
       properties: { ...pt.properties, 'marker-color': colorFor(idx) },
     }));
-  const targetPt = point([target.lon, target.lat], {
+  const targetPt = feature(target, {
     title: 'Target',
     'marker-color': '#ff0000',
     'marker-symbol': 'star',
   });
   const collection = featureCollection<Point, {}>([...features, targetPt]);
-  process.stdout.write(JSON.stringify(collection));
-  process.stdout.write('\n');
+
+  await copy(
+    `https://geojson.io/#data=data:application/json,${encodeURIComponent(
+      JSON.stringify(collection)
+    )}`
+  );
+
+  stdout.write(JSON.stringify(collection));
+  stdout.write('\n');
 };
 
 main().catch(console.error);

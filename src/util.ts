@@ -1,4 +1,4 @@
-import type { Coord } from '@turf/helpers';
+import type { Coord, Point } from '@turf/helpers';
 import { getCoord } from '@turf/invariant';
 import geodesic from 'geographiclib-geodesic';
 import DMS from 'geographiclib-dms';
@@ -25,12 +25,16 @@ export const formatCoord = (pt: Coord): string => {
   ].join(' ');
 };
 
-export const decodeCoord = (coords: string): { lat: number; lon: number } => {
+export const decodeCoord = (coords: string): Point => {
   const components = coords
     .replace(/ +([NESW])/giu, (_, x) => x)
     .split(/[, ]+/);
   if (components.length !== 2) {
     throw new Error(`unable to parse ${coords}`);
   }
-  return DMS.DecodeLatLon(...(components as [string, string]));
+  const { lat, lon } = DMS.DecodeLatLon(...(components as [string, string]));
+  return {
+    type: 'Point',
+    coordinates: [lon, lat],
+  };
 };

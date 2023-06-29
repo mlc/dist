@@ -46,8 +46,7 @@ const main = async () => {
     throw new Error('provide coords pls');
   }
   const p = await getData();
-  const dms = decodeCoord(process.argv[2]);
-  const target = point([dms.lon, dms.lat]);
+  const target = decodeCoord(process.argv[2]);
   const points = decoratePoints(target, p).features.sort(
     ({ properties: { distance: a } }, { properties: { distance: b } }) => a - b
   );
