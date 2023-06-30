@@ -42,12 +42,14 @@ const copy = (data: string) =>
 const main = async () => {
   const input = await getCsv(process.argv[2]);
   const target = decodeCoord(process.argv[3]);
-  const features: Feature<Point, {}>[] = input
+  const features = input
     .map(({ coords, ...rest }) => {
       const us = decodeCoord(coords);
-      const dist = distance(target, us);
-      const sphericalDistance = turfDist(target, us);
-      return feature(us, { ...rest, dist, sphericalDistance });
+      return feature(us, {
+        ...rest,
+        dist: distance(target, us),
+        sphericalDistance: turfDist(target, us),
+      });
     })
     .sort(({ properties: { dist: a } }, { properties: { dist: b } }) => a - b)
     .map((pt, idx) => ({
