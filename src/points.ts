@@ -124,9 +124,18 @@ const parse = async () => {
     ({ round: around, score: ascore }, { round: bround, score: bscore }) =>
       around - bround || bscore - ascore
   );
+  const seenRows = new Set<string>();
   const csv = formatCsv({ headers: true });
   csv.pipe(createWriteStream('scores.csv'));
-  rows.forEach((row) => csv.write(row));
+  rows.forEach((row) => {
+    const key = [row.name, row.round].join('/');
+    if (seenRows.has(key)) {
+      console.warn(`${key} dup`);
+    } else {
+      seenRows.add(key);
+      csv.write(row);
+    }
+  });
   csv.end();
 };
 
