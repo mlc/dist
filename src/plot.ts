@@ -45,9 +45,11 @@ const main = async () => {
   const features = input
     .map(({ coords, ...rest }) => {
       const us = decodeCoord(coords);
+      const dist = distance(target, us);
       return feature(us, {
         ...rest,
-        dist: distance(target, us),
+        dist,
+        score: Math.round(5000 * Math.exp(-dist / 2000)),
         sphericalDistance: turfDist(target, us),
       });
     })
