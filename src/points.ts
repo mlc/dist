@@ -45,8 +45,7 @@ const nicknamedUsers = new Map<string, string>([
 
 const addRound =
   (round: string) =>
-  (buf: Buffer): FoundFile =>
-    [round, buf];
+  (buf: Buffer): FoundFile => [round, buf];
 
 const getZipEntry = (entry: AdmZip.IZipEntry): Promise<Buffer> =>
   new Promise((resolve, reject) =>
