@@ -16,6 +16,8 @@ interface ScoreRecord {
   coord: string;
   dist: number;
   score: number;
+  ns: 'EQ' | null;
+  ew: 'PM' | 'DL' | null;
 }
 
 const bannedUsers = new Set<string>(['DrWhoFanJ']);
@@ -85,6 +87,16 @@ const cleanName = (name: string): string => {
   return nicknamedUsers.get(withoutSpaces) ?? withoutSpaces;
 };
 
+const computeEw = (a: number, b: number): 'PM' | 'DL' | null => {
+  if (Math.sign(a) === Math.sign(b)) {
+    return null;
+  } else if (Math.abs(a) + Math.abs(b) <= 180) {
+    return 'PM';
+  } else {
+    return 'DL';
+  }
+};
+
 // go through the files and write the data to a CSV
 const parse = async () => {
   const parser = new DOMParser();
@@ -103,6 +115,15 @@ const parse = async () => {
         // https://www.reddit.com/r/geoguessr/comments/6fe4fi/2_weekly_random_11_locations_added_in_the_past_2/diie3qf/
         const score = Math.round(5000 * Math.exp(-dist / 2000));
         const coord = formatCoord(feature);
+        const ns =
+          Math.sign(target.geometry.coordinates[1]) ===
+          Math.sign(feature.geometry.coordinates[1])
+            ? null
+            : 'EQ';
+        const ew = computeEw(
+          target.geometry.coordinates[0],
+          feature.geometry.coordinates[0]
+        );
         return feature.properties.name
           .split(/;\s+/)
           .map(cleanName)
@@ -114,6 +135,8 @@ const parse = async () => {
               coord,
               dist,
               score,
+              ns,
+              ew,
             })
           );
       })
