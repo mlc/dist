@@ -18,6 +18,7 @@ interface ScoreRecord {
   score: number;
   ns: 'EQ' | null;
   ew: 'PM' | 'DL' | null;
+  geom: string;
 }
 
 const bannedUsers = new Set<string>(['DrWhoFanJ']);
@@ -137,6 +138,7 @@ const parse = async () => {
               score,
               ns,
               ew,
+              geom: `POINT(${feature.geometry.coordinates.join(' ')})`,
             })
           );
       })
