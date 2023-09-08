@@ -6,7 +6,7 @@ import { join as joinPath } from 'node:path';
 import type { Data } from './index';
 
 const selector =
-  "//all_media/media[geodata/@latitude and string-length(geodata/@latitude)!=0 and privacy/@public='1']";
+  '//all_media/media[geodata/@latitude and string-length(geodata/@latitude)!=0]';
 
 const jsonFilename = joinPath(process.env.HOME!, 'photos.json');
 const xmlFilename = joinPath(process.env.HOME!, 'photos.xml');
@@ -33,17 +33,22 @@ const parse = async (): Promise<Data> => {
     nodes.map((node) => {
       const lat = select('.//geodata/@latitude', node, true) as Attr;
       const lng = select('.//geodata/@longitude', node, true) as Attr;
-      const title = select('.//title', node, true) as Node | undefined;
-      const url = select('.//publicUrl', node, true) as Node | undefined;
+      const title = select('./title', node, true) as Node | undefined;
+      const url = select('./publicUrl', node, true) as Node | undefined;
       const imgUrl = select(
         './/image[@type="Large"]/@publicUrl',
         node,
         true
       ) as Attr | undefined;
+      const privacy = select('./privacy', node, true) as Element | undefined;
       return point([Number(lng.value), Number(lat.value)], {
         url: url?.firstChild?.toString(),
         title: title?.firstChild?.toString(),
         imgUrl: imgUrl?.value,
+        private:
+          privacy?.attributes?.getNamedItem('public')?.value === '1'
+            ? undefined
+            : true,
       });
     })
   );
