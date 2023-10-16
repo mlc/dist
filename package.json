@@ -33,7 +33,7 @@
     "@types/adm-zip": "0.5.2",
     "@types/node": "18.18.5",
     "husky": "8.0.3",
-    "lint-staged": "14.0.1",
+    "lint-staged": "15.0.1",
     "patch-package": "8.0.0",
     "postinstall-postinstall": "2.1.0",
     "prettier": "3.0.3",
