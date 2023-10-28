@@ -1,5 +1,6 @@
-import type { Coord, Point } from '@turf/helpers';
+import type { Coord } from '@turf/helpers';
 import { getCoord } from '@turf/invariant';
+import type { Point } from 'geojson';
 import geodesic from 'geographiclib-geodesic';
 import DMS from 'geographiclib-dms';
 

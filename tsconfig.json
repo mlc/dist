@@ -4,12 +4,11 @@
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist/",
-    "strict": true,
-    "moduleResolution": "Node"
+    "strict": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"],
   "ts-node": {
     "swc": true
-  }
+  },
+  "exclude": ["node_modules"]
 }

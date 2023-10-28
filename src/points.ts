@@ -3,7 +3,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import AdmZip from 'adm-zip';
 import { DOMParser } from '@xmldom/xmldom';
-import type { FeatureCollection, Point } from '@turf/helpers';
+import type { FeatureCollection, Point } from 'geojson';
 import { format as formatCsv } from '@fast-csv/format';
 import togeojson from './togeojson.js';
 import { distance, formatCoord } from './util';

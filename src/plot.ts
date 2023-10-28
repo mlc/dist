@@ -1,8 +1,9 @@
 import { spawn } from 'node:child_process';
 import { stdout } from 'node:process';
 import { parseFile } from '@fast-csv/parse';
-import { Feature, feature, featureCollection, Point } from '@turf/helpers';
+import { feature, featureCollection } from '@turf/helpers';
 import turfDist from '@turf/distance';
+import type { Point } from 'geojson';
 import { decodeCoord, distance } from './util';
 
 interface Row {

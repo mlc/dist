@@ -1,14 +1,7 @@
-import {
-  Coord,
-  Feature,
-  featureCollection,
-  FeatureCollection,
-  Point,
-  point,
-} from '@turf/helpers';
+import { Coord, featureCollection, point } from '@turf/helpers';
+import type { Feature, FeatureCollection, Point } from 'geojson';
 import { getCoord } from '@turf/invariant';
 import { featureEach } from '@turf/meta';
-import DMS from 'geographiclib-dms';
 import getData from './getData';
 import { decodeCoord, distance as getDist, formatCoord } from './util';
 
