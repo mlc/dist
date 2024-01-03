@@ -21,7 +21,15 @@ const getCsv = (fn: string) =>
 
 const medals = ['#d6af36', '#d7d7d7', '#a77044'];
 
-const colorFor = (position: number): string => medals[position] ?? '#0000af';
+const colorFor = (position: number, total: number): string => {
+  if (position < 3) {
+    return medals[position];
+  } else if (position < total / 2) {
+    return '#b8b8e6';
+  } else {
+    return '#0000af';
+  }
+};
 
 const copy = (data: string) =>
   new Promise<void>((resolve, reject) => {
@@ -55,9 +63,12 @@ const main = async () => {
       });
     })
     .sort(({ properties: { dist: a } }, { properties: { dist: b } }) => a - b)
-    .map((pt, idx) => ({
+    .map((pt, idx, { length }) => ({
       ...pt,
-      properties: { ...pt.properties, 'marker-color': colorFor(idx) },
+      properties: {
+        ...pt.properties,
+        'marker-color': colorFor(idx, length),
+      },
     }));
   const targetPt = feature(target, {
     title: 'Target',
