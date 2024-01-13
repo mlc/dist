@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@fast-csv/format": "4.3.5",
-    "@fast-csv/parse": "4.3.6",
+    "@fast-csv/parse": "5.0.0",
     "@turf/distance": "7.0.0-alpha.110",
     "@turf/helpers": "7.0.0-alpha.110",
     "@turf/invariant": "7.0.0-alpha.110",
