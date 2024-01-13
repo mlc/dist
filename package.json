@@ -14,7 +14,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@fast-csv/format": "4.3.5",
+    "@fast-csv/format": "5.0.0",
     "@fast-csv/parse": "4.3.6",
     "@turf/distance": "7.0.0-alpha.110",
     "@turf/helpers": "7.0.0-alpha.110",
