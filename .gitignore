@@ -3,3 +3,8 @@ node_modules
 yarn-error.log
 kmzs
 *.csv
+sorted.json
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
