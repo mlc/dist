@@ -7,4 +7,5 @@ sorted.json
 .yarn/*
 !.yarn/releases
 !.yarn/plugins
+!.yarn/patches
 .pnp.*

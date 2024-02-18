@@ -1,7 +1,7 @@
-diff --git a/node_modules/geographiclib-dms/types/geographiclib-dms.d.ts b/node_modules/geographiclib-dms/types/geographiclib-dms.d.ts
-index a2652a9..a74ca7f 100644
---- a/node_modules/geographiclib-dms/types/geographiclib-dms.d.ts
-+++ b/node_modules/geographiclib-dms/types/geographiclib-dms.d.ts
+diff --git a/types/geographiclib-dms.d.ts b/types/geographiclib-dms.d.ts
+index a2652a910d5e044f248f6d6b44d3a5ce434a8d24..a74ca7f11a79c94b5062e30309bbe3c18d027d3c 100644
+--- a/types/geographiclib-dms.d.ts
++++ b/types/geographiclib-dms.d.ts
 @@ -1,48 +1,36 @@
 -export enum DMSHemisphereIndicator {
 -  NONE = 0,

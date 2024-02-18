@@ -10,7 +10,6 @@
     "calc": "ts-node src/index.ts",
     "score": "ts-node src/points.ts",
     "prepare": "husky",
-    "postinstall": "patch-package",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -22,7 +21,7 @@
     "@turf/meta": "7.0.0-alpha.113",
     "@xmldom/xmldom": "0.8.10",
     "adm-zip": "0.5.10",
-    "geographiclib-dms": "2.0.0",
+    "geographiclib-dms": "patch:geographiclib-dms@npm%3A2.0.0#~/.yarn/patches/geographiclib-dms-npm-2.0.0-9bb6dd8014.patch",
     "geographiclib-geodesic": "2.0.0",
     "prettier": "3.2.5",
     "xpath": "0.0.34"
@@ -36,8 +35,6 @@
     "@types/node": "18.19.17",
     "husky": "9.0.11",
     "lint-staged": "15.2.2",
-    "patch-package": "8.0.0",
-    "postinstall-postinstall": "2.1.0",
     "ts-node": "10.9.2",
     "typescript": "5.3.3"
   },
