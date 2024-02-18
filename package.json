@@ -24,6 +24,7 @@
     "adm-zip": "0.5.10",
     "geographiclib-dms": "2.0.0",
     "geographiclib-geodesic": "2.0.0",
+    "prettier": "3.2.5",
     "xpath": "0.0.34"
   },
   "devDependencies": {
@@ -37,7 +38,6 @@
     "lint-staged": "15.2.2",
     "patch-package": "8.0.0",
     "postinstall-postinstall": "2.1.0",
-    "prettier": "3.2.5",
     "ts-node": "10.9.2",
     "typescript": "5.3.3"
   },

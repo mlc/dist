@@ -3,6 +3,7 @@ import type { Feature, FeatureCollection, Point } from 'geojson';
 import { writeFile } from 'fs/promises';
 import { getCoord } from '@turf/invariant';
 import { featureEach } from '@turf/meta';
+import { format } from 'prettier';
 import getData from './getData';
 import { decodeCoord, distance as getDist, formatCoord } from './util';
 
@@ -44,7 +45,9 @@ const main = async () => {
   const points = decoratePoints(target, p).features.sort(
     ({ properties: { distance: a } }, { properties: { distance: b } }) => a - b
   );
-  await writeFile('sorted.json', JSON.stringify(points));
+  await format(JSON.stringify(points), { parser: 'json' }).then((txt) =>
+    writeFile('sorted.json', txt)
+  );
   return argc === 4 ? points.slice(0, parseInt(process.argv[3])) : points[0];
 };
 
