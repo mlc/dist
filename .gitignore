@@ -9,3 +9,4 @@ sorted.json
 !.yarn/plugins
 !.yarn/patches
 .pnp.*
+output.json

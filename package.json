@@ -21,6 +21,7 @@
     "@turf/meta": "7.0.0-alpha.114",
     "@xmldom/xmldom": "0.8.10",
     "adm-zip": "0.5.12",
+    "d3-geo-voronoi": "2.0.1",
     "geographiclib-dms": "patch:geographiclib-dms@npm%3A2.0.0#~/.yarn/patches/geographiclib-dms-npm-2.0.0-9bb6dd8014.patch",
     "geographiclib-geodesic": "2.0.0",
     "prettier": "3.2.5",

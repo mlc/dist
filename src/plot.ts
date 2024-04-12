@@ -1,10 +1,9 @@
-import { spawn } from 'node:child_process';
 import { stdout } from 'node:process';
 import { parseFile } from '@fast-csv/parse';
 import { feature, featureCollection } from '@turf/helpers';
 import turfDist from '@turf/distance';
 import type { Point } from 'geojson';
-import { decodeCoord, distance } from './util';
+import { copy, decodeCoord, distance } from './util';
 
 interface Row {
   coords: string;
@@ -30,23 +29,6 @@ const colorFor = (position: number, total: number): string => {
     return '#0000af';
   }
 };
-
-const copy = (data: string) =>
-  new Promise<void>((resolve, reject) => {
-    const process = spawn('xclip', ['-i', '-selection', 'clipboard'], {
-      stdio: ['pipe', 'inherit', 'inherit'],
-    });
-    process.on('error', (e) => reject(e));
-    process.on('close', (code) => {
-      if (code === 0) {
-        resolve();
-      } else {
-        reject(new Error(`process exited with ${code}`));
-      }
-    });
-    process.stdin.write(Buffer.from(data, 'utf-8'));
-    process.stdin.end();
-  });
 
 const main = async () => {
   const input = await getCsv(process.argv[2]);

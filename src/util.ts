@@ -3,6 +3,7 @@ import { getCoord } from '@turf/invariant';
 import type { Point } from 'geojson';
 import geodesic from 'geographiclib-geodesic';
 import DMS from 'geographiclib-dms';
+import { spawn } from 'node:child_process';
 
 // compute the distance between two points
 export const distance = (a: Coord, b: Coord): number => {
@@ -39,3 +40,20 @@ export const decodeCoord = (coords: string): Point => {
     coordinates: [lon, lat],
   };
 };
+
+export const copy = (data: string) =>
+  new Promise<void>((resolve, reject) => {
+    const process = spawn('xclip', ['-i', '-selection', 'clipboard'], {
+      stdio: ['pipe', 'inherit', 'inherit'],
+    });
+    process.on('error', (e) => reject(e));
+    process.on('close', (code) => {
+      if (code === 0) {
+        resolve();
+      } else {
+        reject(new Error(`process exited with ${code}`));
+      }
+    });
+    process.stdin.write(Buffer.from(data, 'utf-8'));
+    process.stdin.end();
+  });
