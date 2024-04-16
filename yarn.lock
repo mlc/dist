@@ -295,12 +295,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.19.26":
-  version: 18.19.26
-  resolution: "@types/node@npm:18.19.26"
+"@types/node@npm:*, @types/node@npm:20.12.7":
+  version: 20.12.7
+  resolution: "@types/node@npm:20.12.7"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/34b9ceb3366fc616f35a3f3a1467478182cc265ff142c02000503161a679d3036d8bbc410d343ae4012a868e879941d64d656bd509674b055c8735aba24d98e2
+  checksum: 10c0/dce80d63a3b91892b321af823d624995c61e39c6a223cc0ac481a44d337640cc46931d33efb3beeed75f5c85c3bda1d97cef4c5cd4ec333caf5dee59cff6eca0
   languageName: node
   linkType: hard
 
@@ -491,7 +491,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"d3-geo-voronoi@npm:^2.0.1":
+"d3-geo-voronoi@npm:2.0.1":
   version: 2.0.1
   resolution: "d3-geo-voronoi@npm:2.0.1"
   dependencies:
@@ -653,10 +653,10 @@ __metadata:
     "@turf/meta": "npm:7.0.0-alpha.114"
     "@types/adm-zip": "npm:0.5.5"
     "@types/geojson": "npm:7946.0.14"
-    "@types/node": "npm:18.19.26"
+    "@types/node": "npm:20.12.7"
     "@xmldom/xmldom": "npm:0.8.10"
     adm-zip: "npm:0.5.12"
-    d3-geo-voronoi: "npm:^2.0.1"
+    d3-geo-voronoi: "npm:2.0.1"
     geographiclib-dms: "patch:geographiclib-dms@npm%3A2.0.0#~/.yarn/patches/geographiclib-dms-npm-2.0.0-9bb6dd8014.patch"
     geographiclib-geodesic: "npm:2.0.0"
     husky: "npm:9.0.11"
