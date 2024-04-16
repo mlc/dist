@@ -30,10 +30,10 @@
   "devDependencies": {
     "@swc/core": "1.4.8",
     "@swc/helpers": "0.5.7",
-    "@tsconfig/node18": "18.2.2",
+    "@tsconfig/node20": "20.1.4",
     "@types/adm-zip": "0.5.5",
     "@types/geojson": "7946.0.14",
-    "@types/node": "18.19.26",
+    "@types/node": "20.12.7",
     "husky": "9.0.11",
     "lint-staged": "15.2.2",
     "ts-node": "10.9.2",
