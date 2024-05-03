@@ -5,10 +5,11 @@ import type {
   Polygon,
   Position,
 } from 'geojson';
+import distance from '@turf/distance';
+import { geoVoronoi } from 'd3-geo-voronoi';
+import { featureCollection, point } from '@turf/helpers';
 import getData from './getData';
 import type { Props } from './index';
-import distance from '@turf/distance';
-import { featureCollection, point } from '@turf/helpers';
 import { copy } from './util';
 
 interface VProps {
@@ -18,13 +19,8 @@ interface VProps {
 }
 
 const main = async () => {
-  // @ts-ignore
-  const d3GeoVoronoi = await import('d3-geo-voronoi');
-
   const data = await getData();
-  const voronoi: FeatureCollection<Polygon, VProps> = d3GeoVoronoi
-    .geoVoronoi(data)
-    .polygons();
+  const voronoi = geoVoronoi(data).polygons();
 
   const [result, d] = voronoi.features.reduce<[Position | null, number]>(
     (a, polygon) =>
