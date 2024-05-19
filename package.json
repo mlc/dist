@@ -28,12 +28,12 @@
     "xpath": "0.0.34"
   },
   "devDependencies": {
-    "@swc/core": "1.4.17",
+    "@swc/core": "1.5.7",
     "@swc/helpers": "0.5.11",
     "@tsconfig/node20": "20.1.4",
     "@types/adm-zip": "0.5.5",
     "@types/geojson": "7946.0.14",
-    "@types/node": "20.12.8",
+    "@types/node": "20.12.12",
     "husky": "9.0.11",
     "lint-staged": "15.2.2",
     "ts-node": "10.9.2",
