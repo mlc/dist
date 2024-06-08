@@ -24,18 +24,18 @@
     "d3-geo-voronoi": "2.1.0",
     "geographiclib-dms": "patch:geographiclib-dms@npm%3A2.0.0#~/.yarn/patches/geographiclib-dms-npm-2.0.0-9bb6dd8014.patch",
     "geographiclib-geodesic": "2.0.0",
-    "prettier": "3.3.1",
     "xpath": "0.0.34"
   },
   "devDependencies": {
-    "@swc/core": "1.5.7",
+    "@swc/core": "1.5.25",
     "@swc/helpers": "0.5.11",
     "@tsconfig/node20": "20.1.4",
     "@types/adm-zip": "0.5.5",
     "@types/geojson": "7946.0.14",
-    "@types/node": "20.12.12",
+    "@types/node": "20.14.2",
     "husky": "9.0.11",
-    "lint-staged": "15.2.2",
+    "lint-staged": "15.2.5",
+    "prettier": "3.3.1",
     "ts-node": "10.9.2",
     "typescript": "5.4.5"
   },
