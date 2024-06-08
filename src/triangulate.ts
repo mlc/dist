@@ -6,7 +6,6 @@ import type {
   Position,
 } from 'geojson';
 import distance from '@turf/distance';
-import { geoVoronoi } from 'd3-geo-voronoi';
 import { featureCollection, point } from '@turf/helpers';
 import getData from './getData';
 import type { Props } from './index';
@@ -19,6 +18,7 @@ interface VProps {
 }
 
 const main = async () => {
+  const { geoVoronoi } = await import('d3-geo-voronoi');
   const data = await getData();
   const voronoi = geoVoronoi(data).polygons();
 
