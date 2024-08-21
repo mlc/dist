@@ -27,18 +27,18 @@
     "xpath": "0.0.34"
   },
   "devDependencies": {
-    "@swc-node/register": "1.9.2",
-    "@swc/core": "1.6.5",
-    "@swc/helpers": "0.5.11",
+    "@swc-node/register": "1.10.9",
+    "@swc/core": "1.7.14",
+    "@swc/helpers": "0.5.12",
     "@tsconfig/node20": "20.1.4",
     "@types/adm-zip": "0.5.5",
     "@types/geojson": "7946.0.14",
-    "@types/node": "20.14.9",
-    "husky": "9.0.11",
-    "lint-staged": "15.2.7",
-    "prettier": "3.3.2",
+    "@types/node": "20.16.1",
+    "husky": "9.1.5",
+    "lint-staged": "15.2.9",
+    "prettier": "3.3.3",
     "ts-node": "10.9.2",
-    "typescript": "5.5.2"
+    "typescript": "5.5.4"
   },
   "lint-staged": {
     "*.{js,css,md,ts,json}": "prettier --write"
