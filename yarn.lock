@@ -631,7 +631,7 @@ __metadata:
     "@xmldom/xmldom": "npm:0.8.10"
     adm-zip: "npm:0.5.15"
     d3-geo-voronoi: "npm:2.1.0"
-    geographiclib-dms: "patch:geographiclib-dms@npm%3A2.0.0#~/.yarn/patches/geographiclib-dms-npm-2.0.0-9bb6dd8014.patch"
+    geographiclib-dms: "npm:2.1.1"
     geographiclib-geodesic: "npm:2.1.1"
     husky: "npm:9.0.11"
     lint-staged: "npm:15.2.7"
@@ -682,17 +682,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"geographiclib-dms@npm:2.0.0":
-  version: 2.0.0
-  resolution: "geographiclib-dms@npm:2.0.0"
-  checksum: 10c0/a3082682749ab8e8da0f11a4a651d026c4b3d567085f396b1f2f9c09433e2392dba0b2a281389f997bf3678bc2eda439f93ca51175e2bc7ba1c19958e47ec9f1
-  languageName: node
-  linkType: hard
-
-"geographiclib-dms@patch:geographiclib-dms@npm%3A2.0.0#~/.yarn/patches/geographiclib-dms-npm-2.0.0-9bb6dd8014.patch":
-  version: 2.0.0
-  resolution: "geographiclib-dms@patch:geographiclib-dms@npm%3A2.0.0#~/.yarn/patches/geographiclib-dms-npm-2.0.0-9bb6dd8014.patch::version=2.0.0&hash=09a190"
-  checksum: 10c0/93fb61d3d969e5e0aeab54dfd2974514ec5813f90918ae258d36f86465cfa98ed3154b91de042a0dec301126ded586bb3c0b725fc6a579a87ea8b17c792bf320
+"geographiclib-dms@npm:2.1.1":
+  version: 2.1.1
+  resolution: "geographiclib-dms@npm:2.1.1"
+  checksum: 10c0/0be83cbc0875dbec89c821da2327f23461161dfce2816db72d63ba6909b922243e38dd8a85061e535bb146423951db46e30a07443b37bf6384e649641168d7ad
   languageName: node
   linkType: hard
 
