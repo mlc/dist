@@ -42,22 +42,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fast-csv/format@npm:5.0.0":
-  version: 5.0.0
-  resolution: "@fast-csv/format@npm:5.0.0"
+"@fast-csv/format@npm:5.0.2":
+  version: 5.0.2
+  resolution: "@fast-csv/format@npm:5.0.2"
   dependencies:
     lodash.escaperegexp: "npm:^4.1.2"
     lodash.isboolean: "npm:^3.0.3"
     lodash.isequal: "npm:^4.5.0"
     lodash.isfunction: "npm:^3.0.9"
     lodash.isnil: "npm:^4.0.0"
-  checksum: 10c0/a7ac57c0d27c2a3d3ae6246efeb0dcee4a30e655c4791114f714b0d1d81094d489a87b9795be9e6ff408046c8b787e8cd852ee11d17b10ff7fc9c208a4e6d4b5
+  checksum: 10c0/dd31e0d6809a4e8e77e24927da35357aa49018965cbee9040a49af66d3dd0adbcdb4b516f1b2092523ea8d410e17ae55ed3cedeb51743d6869d0476def73f5b9
   languageName: node
   linkType: hard
 
-"@fast-csv/parse@npm:5.0.0":
-  version: 5.0.0
-  resolution: "@fast-csv/parse@npm:5.0.0"
+"@fast-csv/parse@npm:5.0.2":
+  version: 5.0.2
+  resolution: "@fast-csv/parse@npm:5.0.2"
   dependencies:
     lodash.escaperegexp: "npm:^4.1.2"
     lodash.groupby: "npm:^4.6.0"
@@ -65,7 +65,7 @@ __metadata:
     lodash.isnil: "npm:^4.0.0"
     lodash.isundefined: "npm:^3.0.1"
     lodash.uniq: "npm:^4.5.0"
-  checksum: 10c0/883ed2355550e8663b5e4cef186e7968269bda23a70e83652781e9d90a47ac7a0f5fcefc1568f1701d0d5235c0fc376f76b3b563013ad66385d18137741435fa
+  checksum: 10c0/191d5e8f60468700d1b14a799c08c6aeae56da0a4e215c979e08079f767b1487028bc95a02e1deb01d9812ecbba0b628ebc4697c20142e73b7951924c568c06e
   languageName: node
   linkType: hard
 
@@ -93,7 +93,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@js-joda/core@npm:^5.6.3":
+"@js-joda/core@npm:5.6.3":
   version: 5.6.3
   resolution: "@js-joda/core@npm:5.6.3"
   checksum: 10c0/0d49154592f1f32db0a57cf33ccc254a9518cae69eae3f625fad4ec26ef8b386981c8bf3c41831708048d77be3bdf55e09fda44275f458ad8d19c16c8a986a06
@@ -481,10 +481,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xmldom/xmldom@npm:0.8.10":
-  version: 0.8.10
-  resolution: "@xmldom/xmldom@npm:0.8.10"
-  checksum: 10c0/c7647c442502720182b0d65b17d45d2d95317c1c8c497626fe524bda79b4fb768a9aa4fae2da919f308e7abcff7d67c058b102a9d641097e9a57f0b80187851f
+"@xmldom/xmldom@npm:0.9.4":
+  version: 0.9.4
+  resolution: "@xmldom/xmldom@npm:0.9.4"
+  checksum: 10c0/cd598525854f679e4e8b6716709e3e61cb3ba52e12e03383010780c002c7ba38b98baf682a628ff74e6470bc205da7879d8742c70f001310ed697c0a2c2517b1
   languageName: node
   linkType: hard
 
@@ -504,10 +504,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"adm-zip@npm:0.5.15":
-  version: 0.5.15
-  resolution: "adm-zip@npm:0.5.15"
-  checksum: 10c0/40ad504176c4b7f41983d11f7ff28acd3ce5b9bd51a09356be2447cb1799de4a4d93f8b0f65f75814add17687445cc807bbcb5ec8f73f44af1aefe4509894a8c
+"adm-zip@npm:0.5.16":
+  version: 0.5.16
+  resolution: "adm-zip@npm:0.5.16"
+  checksum: 10c0/6f10119d4570c7ba76dcf428abb8d3f69e63f92e51f700a542b43d4c0130373dd2ddfc8f85059f12d4a843703a90c3970cfd17876844b4f3f48bf042bfa6b49f
   languageName: node
   linkType: hard
 
@@ -750,9 +750,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dist@workspace:."
   dependencies:
-    "@fast-csv/format": "npm:5.0.0"
-    "@fast-csv/parse": "npm:5.0.0"
-    "@js-joda/core": "npm:^5.6.3"
+    "@fast-csv/format": "npm:5.0.2"
+    "@fast-csv/parse": "npm:5.0.2"
+    "@js-joda/core": "npm:5.6.3"
     "@swc-node/register": "npm:1.10.9"
     "@swc/core": "npm:1.7.14"
     "@swc/helpers": "npm:0.5.12"
@@ -764,8 +764,8 @@ __metadata:
     "@types/adm-zip": "npm:0.5.5"
     "@types/geojson": "npm:7946.0.14"
     "@types/node": "npm:20.16.1"
-    "@xmldom/xmldom": "npm:0.8.10"
-    adm-zip: "npm:0.5.15"
+    "@xmldom/xmldom": "npm:0.9.4"
+    adm-zip: "npm:0.5.16"
     d3-geo-voronoi: "npm:2.1.0"
     geographiclib-dms: "npm:2.1.1"
     geographiclib-geodesic: "npm:2.1.1"
