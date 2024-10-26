@@ -15,6 +15,7 @@
   "dependencies": {
     "@fast-csv/format": "5.0.0",
     "@fast-csv/parse": "5.0.0",
+    "@js-joda/core": "^5.6.3",
     "@turf/distance": "7.1.0",
     "@turf/helpers": "7.1.0",
     "@turf/invariant": "7.1.0",
