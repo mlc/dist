@@ -25,6 +25,7 @@
     "d3-geo-voronoi": "2.1.0",
     "geographiclib-dms": "2.1.1",
     "geographiclib-geodesic": "2.1.1",
+    "pg": "8.13.1",
     "xpath": "0.0.34"
   },
   "devDependencies": {
@@ -35,6 +36,7 @@
     "@types/adm-zip": "0.5.5",
     "@types/geojson": "7946.0.14",
     "@types/node": "20.17.1",
+    "@types/pg": "8.11.11",
     "husky": "9.1.6",
     "lint-staged": "15.2.10",
     "prettier": "3.3.3",
