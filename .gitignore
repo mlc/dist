@@ -10,3 +10,5 @@ sorted.json
 !.yarn/patches
 .pnp.*
 output.json
+raster2.*
+voronoi.json
