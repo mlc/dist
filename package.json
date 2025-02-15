@@ -25,7 +25,7 @@
     "d3-geo-voronoi": "2.1.0",
     "geographiclib-dms": "2.1.1",
     "geographiclib-geodesic": "2.1.1",
-    "pg": "8.13.1",
+    "pg": "8.13.3",
     "xpath": "0.0.34"
   },
   "devDependencies": {
