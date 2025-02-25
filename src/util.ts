@@ -29,6 +29,7 @@ export const formatCoord = (pt: Coord): string => {
 
 export const decodeCoord = (coords: string): Point => {
   const components = coords
+    .trim()
     .replace(/ +([NESW])/giu, (_, x) => x)
     .split(/[, ]+/);
   if (components.length !== 2) {
