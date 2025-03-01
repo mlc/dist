@@ -492,10 +492,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xmldom/xmldom@npm:0.9.7":
-  version: 0.9.7
-  resolution: "@xmldom/xmldom@npm:0.9.7"
-  checksum: 10c0/d2f44a37bc76f699eebd074c2370a17029f1970252b4337837acb59396386ff5fdafb8a8550194705609d70b38a0453aed356e661893a5b4ae0ca5fe5d6ebaf9
+"@xmldom/xmldom@npm:0.9.8":
+  version: 0.9.8
+  resolution: "@xmldom/xmldom@npm:0.9.8"
+  checksum: 10c0/2ea984270832de2843ab0bbb6df71bde9aa02126b69e5fd56b5512b98ace48e94aff7186e77d0b22fe4b6780483862be752bcf8577436638a9210109029a0503
   languageName: node
   linkType: hard
 
@@ -776,7 +776,7 @@ __metadata:
     "@types/geojson": "npm:7946.0.16"
     "@types/node": "npm:22.13.5"
     "@types/pg": "npm:8.11.11"
-    "@xmldom/xmldom": "npm:0.9.7"
+    "@xmldom/xmldom": "npm:0.9.8"
     adm-zip: "npm:0.5.16"
     d3-geo-voronoi: "npm:2.1.0"
     geographiclib-dms: "npm:2.1.1"
