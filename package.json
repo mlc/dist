@@ -20,7 +20,7 @@
     "@turf/helpers": "7.2.0",
     "@turf/invariant": "7.2.0",
     "@turf/meta": "7.2.0",
-    "@xmldom/xmldom": "0.9.7",
+    "@xmldom/xmldom": "0.9.8",
     "adm-zip": "0.5.16",
     "d3-geo-voronoi": "2.1.0",
     "geographiclib-dms": "2.1.1",
