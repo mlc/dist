@@ -404,6 +404,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@turf/bbox@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@turf/bbox@npm:7.2.0"
+  dependencies:
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/meta": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/766d59d5f75c272481e971cd4004e139962607e8f34391b2abfb15bb34f9544a0479ceb14772565e005e4a12fdd82adf0d440ab1c9e0decbde6de50a5706db43
+  languageName: node
+  linkType: hard
+
+"@turf/boolean-point-in-polygon@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@turf/boolean-point-in-polygon@npm:7.2.0"
+  dependencies:
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/invariant": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    point-in-polygon-hao: "npm:^1.1.0"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/eeb431f70175e466205b27076dbc331b862d3e6867d43730ac4099ecd7e6d6f0fed9e3301fd29f6375f340e379f477489f09060e6aec9fc0f7afa01ac58d5c09
+  languageName: node
+  linkType: hard
+
 "@turf/distance@npm:7.2.0":
   version: 7.2.0
   resolution: "@turf/distance@npm:7.2.0"
@@ -437,7 +462,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turf/meta@npm:7.2.0":
+"@turf/meta@npm:7.2.0, @turf/meta@npm:^7.2.0":
   version: 7.2.0
   resolution: "@turf/meta@npm:7.2.0"
   dependencies:
@@ -768,6 +793,8 @@ __metadata:
     "@swc/core": "npm:1.11.8"
     "@swc/helpers": "npm:0.5.15"
     "@tsconfig/node22": "npm:22.0.0"
+    "@turf/bbox": "npm:7.2.0"
+    "@turf/boolean-point-in-polygon": "npm:7.2.0"
     "@turf/distance": "npm:7.2.0"
     "@turf/helpers": "npm:7.2.0"
     "@turf/invariant": "npm:7.2.0"
@@ -779,6 +806,7 @@ __metadata:
     "@xmldom/xmldom": "npm:0.9.8"
     adm-zip: "npm:0.5.16"
     d3-geo-voronoi: "npm:2.1.0"
+    flatbush: "npm:4.4.0"
     geographiclib-dms: "npm:2.1.1"
     geographiclib-geodesic: "npm:2.1.1"
     husky: "npm:9.1.7"
@@ -835,6 +863,22 @@ __metadata:
   dependencies:
     to-regex-range: "npm:^5.0.1"
   checksum: 10c0/b75b691bbe065472f38824f694c2f7449d7f5004aa950426a2c28f0306c60db9b880c0b0e4ed819997ffb882d1da02cfcfc819bddc94d71627f5269682edf018
+  languageName: node
+  linkType: hard
+
+"flatbush@npm:4.4.0":
+  version: 4.4.0
+  resolution: "flatbush@npm:4.4.0"
+  dependencies:
+    flatqueue: "npm:^2.0.3"
+  checksum: 10c0/3412f207c92c26e6ed197f666240ec20aa893ed66ffcde44cf97250d289d0c0190cfe30c44338bd5b77d31b55cd7772827fd32c065ddae0acce7a04fad8c8ab5
+  languageName: node
+  linkType: hard
+
+"flatqueue@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "flatqueue@npm:2.0.3"
+  checksum: 10c0/6ecc53d81b171d60c17dd775f44731e04d4ab4ed4496d5e2b883bdf2fd08d0853d57f1f26d4e33bc41d991a3beed74d18e4eec5d98a82fec30d1918900f1631f
   languageName: node
   linkType: hard
 
@@ -1294,6 +1338,15 @@ __metadata:
   version: 4.0.6
   resolution: "pirates@npm:4.0.6"
   checksum: 10c0/00d5fa51f8dded94d7429700fb91a0c1ead00ae2c7fd27089f0c5b63e6eca36197fe46384631872690a66f390c5e27198e99006ab77ae472692ab9c2ca903f36
+  languageName: node
+  linkType: hard
+
+"point-in-polygon-hao@npm:^1.1.0":
+  version: 1.2.4
+  resolution: "point-in-polygon-hao@npm:1.2.4"
+  dependencies:
+    robust-predicates: "npm:^3.0.2"
+  checksum: 10c0/12badef8b15216acdae7d609a8aca1b916d6a9cac2f53ace2928e3b521bee57224489ea8fba41d001c0c05c50e64152c175e3d6583d8cad6fe7af929f082b49a
   languageName: node
   linkType: hard
 
