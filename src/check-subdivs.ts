@@ -1,20 +1,20 @@
 import { createWriteStream } from 'node:fs';
-import { readFile } from 'node:fs/promises';
-import { FeatureCollection, Polygon } from 'geojson';
+import { readdir, readFile } from 'node:fs/promises';
+import { FeatureCollection, MultiPolygon, Polygon } from 'geojson';
 import { bbox } from '@turf/bbox';
-import { Coord, point } from '@turf/helpers';
+import { Coord, featureCollection, point } from '@turf/helpers';
 import Flatbush from 'flatbush';
 import { getCoord } from '@turf/invariant';
 import booleanPointInPolygon from '@turf/boolean-point-in-polygon';
 import { format as formatCsv } from '@fast-csv/format';
 
-interface MapMakingExtra {
+export interface MapMakingExtra {
   tags?: string[];
   panoId?: string;
   panoDate?: string;
 }
 
-interface MapMakingCoord {
+export interface MapMakingCoord {
   lat: number;
   lng: number;
   heading: number;
@@ -26,24 +26,21 @@ interface MapMakingCoord {
   extra?: MapMakingExtra;
 }
 
-interface MapMaking {
+export interface MapMaking {
   name: string;
   customCoordinates: MapMakingCoord[];
   extra?: MapMakingExtra;
 }
 
-interface Admin1Properties {
-  // there are more than this but who cares
-  featurecla: 'Admin-1 states provinces';
-  iso_a2: string;
+interface OsmProps {
+  osm_id: number;
   name: string;
-  name_en: string;
-  name_alt?: string;
-  name_local?: string;
-  admin: string;
+  name_en?: string;
+  admin_level: number;
+  boundary?: 'administrative';
 }
 
-type Admin1 = FeatureCollection<Polygon, Admin1Properties>;
+type OsmBoundaries = FeatureCollection<Polygon | MultiPolygon, OsmProps>;
 
 const getMap = (): Promise<MapMaking> =>
   readFile(process.env.HOME + '/Download/merged.json', 'utf-8').then(
@@ -52,13 +49,20 @@ const getMap = (): Promise<MapMaking> =>
 
 // https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/
 // ogr2ogr ne_10m_admin_1_states_provinces.json -f GeoJSON ne_10m_admin_1_states_provinces.shp
-const getSubdivs = (): Promise<Admin1> =>
-  readFile(
-    process.env.HOME + '/Download/ne_10m_admin_1_states_provinces.json',
-    'utf-8'
-  ).then(JSON.parse);
+const getSubdivs = async (): Promise<OsmBoundaries> => {
+  const dir = await readdir(__dirname + '/../osmb', { withFileTypes: true });
+  const files = dir
+    .filter((file) => file.isFile() && file.name.startsWith('boundaries-'))
+    .map((file) => file.name);
+  const jsons: OsmBoundaries[] = await Promise.all(
+    files.map((fn) =>
+      readFile(__dirname + '/../osmb/' + fn, 'utf-8').then(JSON.parse)
+    )
+  );
+  return featureCollection(jsons.flatMap((j) => j.features));
+};
 
-const makeIndex = (input: Admin1) => {
+const makeIndex = (input: OsmBoundaries) => {
   const index = new Flatbush(input.features.length);
   for (const feat of input.features) {
     const [minX, minY, maxX, maxY] = bbox(feat);
@@ -68,52 +72,138 @@ const makeIndex = (input: Admin1) => {
   return index;
 };
 
-const findSubdiv = (p: Coord, subdivs: Admin1, index: Flatbush) => {
+const findSubdivs = (p: Coord, subdivs: OsmBoundaries, index: Flatbush) => {
   const [x, y] = getCoord(p);
   const candidates = index.search(x, y, x, y).map((i) => subdivs.features[i]);
-  return candidates.find((candidate) => booleanPointInPolygon(p, candidate));
+  return candidates.filter((candidate) => booleanPointInPolygon(p, candidate));
 };
 
-const removeDiacritics = (s: string) =>
-  s
+const customCleaners: Record<string, RegExp[]> = {
+  AE: [/ Emirate$/],
+  AL: [/ County$/],
+  AM: [/ Province$/],
+  AZ: [/ rayonu$/, / District$/],
+  BA: [/ Canton$/],
+  BD: [/ Division$/],
+  BT: [/ District$/],
+  BW: [/ District$/],
+  BY: [/ Region$/],
+  BZ: [/ District$/],
+  CL: [/ Region$/],
+  CN: [/ Province$/],
+  CZ: [/ Region$/],
+  DK: [/^Region /],
+  EE: [/ County$/],
+  ET: [/ Region$/],
+  GH: [/ Region$/],
+  GT: [/ Department$/],
+  HK: [/ District$/],
+  HR: [/ County$/, / županija$/],
+  HT: [/^Département du /],
+  IE: [/^County /],
+  IQ: [/ Governorate$/],
+  IR: [/ Province$/],
+  JP: [/ Prefecture$/],
+  KG: [/ Region$/],
+  KR: [/ State$/],
+  KW: [/ Governorate$/],
+  KZ: [/ [Rr]egion$/],
+  LA: [/ Province$/],
+  LK: [/ District$/],
+  LR: [/ County$/],
+  LS: [/ District$/],
+  MD: [/ District$/, / Municipality$/],
+  ME: [/ Municipality$/],
+  MM: [/ Region$/, / State$/],
+  MV: [/ Atoll$/],
+  NA: [/ Region$/],
+  NP: [/ Province$/, / Pradesh$/],
+  NZ: [/ District$/],
+  OT: [/ District$/],
+  RW: [/ Province$/],
+  SA: [/ Province$/, / Region$/],
+  SE: [/ County$/],
+  SK: [/ kraj$/, /^Region of/],
+  SL: [/ (Province|Area)(, Sierra Leone)?$/],
+  SN: [/ Region$/],
+  SY: [/ Governorate$/],
+  TG: [/ Region$/],
+  TH: [/ Province$/],
+  TJ: [/ (Autonomous )?Region$/],
+  TM: [/ Region$/, / City$/],
+  TW: [/ County$/],
+  UA: [/ Oblast$/],
+  UG: [/ City$/],
+  UK: [/ City$/, /^City of /],
+  UZ: [/ Region$/],
+  VN: [/ Province$/],
+  XK: [/^District of /],
+  ZM: [/ Province$/],
+};
+
+const removeDiacritics = (s: string, country?: string) =>
+  (customCleaners[country ?? ''] ?? [])
+    .reduce((acc, re) => acc.replace(re, ''), s)
     .normalize('NFD')
-    .replace(/\p{Diacritic}/gu, '')
-    .replace(/[\p{White_Space}_]+/gu, ' ')
+    .replace(/[\p{Diacritic}']/gu, '')
+    .replace(/[\p{White_Space}_-]+/gu, ' ')
+    .replace(/ı/gu, 'i')
+    .trim()
     .toLowerCase();
 
-const nameMatch = (tag: string, subdiv: Admin1Properties) => {
-  const candidates = [
-    subdiv.name,
-    subdiv.name_en,
-    subdiv.name_alt,
-    subdiv.name_local,
-  ].flatMap((names) => (names ? names.split('|') : []));
+const nameMatch = (tag: string, subdiv: OsmProps, country: string) => {
+  const candidates = [subdiv.name, subdiv.name_en];
+  const cleanTag = removeDiacritics(tag.split('_').slice(0, -1).join(' '));
   return candidates.some(
-    (name) =>
-      removeDiacritics(tag) === removeDiacritics(`${name}_${subdiv.iso_a2}`)
+    (name) => name && cleanTag === removeDiacritics(name, country)
   );
 };
 
 const main = async () => {
   const [map, nat] = await Promise.all([getMap(), getSubdivs()]);
+  console.log('read files');
   const index = makeIndex(nat);
+  console.log('made index', index.nodeSize);
   const csv = formatCsv({ headers: true });
   csv.pipe(createWriteStream('check-subdivs-report.csv'));
+  let trues = 0,
+    falses = 0;
+  const data = [];
   for (const loc of map.customCoordinates) {
-    const locFeature = point([loc.lng, loc.lat]);
-    const subdiv = findSubdiv(locFeature, nat, index);
     const taggedSubdiv = loc.extra?.tags?.[0] ?? '';
-    const country = taggedSubdiv.split('_').at(-1);
-    const matches = subdiv ? nameMatch(taggedSubdiv, subdiv.properties) : false;
-    csv.write({
-      country,
+    const locFeature = point([loc.lng, loc.lat], { subdiv: taggedSubdiv });
+    const subdivs = findSubdivs(locFeature, nat, index);
+    const country = taggedSubdiv.split('_').at(-1)!;
+    const matches = subdivs.some((subdiv) =>
+      nameMatch(taggedSubdiv, subdiv.properties, country)
+    );
+    if (matches) {
+      trues += 1;
+    } else {
+      falses += 1;
+    }
+    data.push({
       taggedSubdiv,
-      natEarthName: subdiv?.properties?.name,
-      natEarthCountry: subdiv?.properties?.admin,
+      country,
+      subdivs: subdivs
+        .map((sd) => sd.properties.name_en ?? sd.properties.name)
+        .join('; '),
       matches,
+      url:
+        'https://geojson.io/#data=data:application/json,' +
+        encodeURIComponent(JSON.stringify(featureCollection([locFeature]))),
     });
   }
+  data.sort(
+    (a, b) =>
+      a.country.localeCompare(b.country) ||
+      a.taggedSubdiv.localeCompare(b.taggedSubdiv)
+  );
+  for (const row of data) {
+    csv.write(row);
+  }
   csv.end();
+  console.log({ trues, falses });
 };
 
 main().then(() => {});

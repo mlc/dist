@@ -12,3 +12,5 @@ sorted.json
 output.json
 raster2.*
 voronoi.json
+.osmbkey
+osmb/
