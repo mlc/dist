@@ -13,4 +13,4 @@ output.json
 raster2.*
 voronoi.json
 .osmbkey
-osmb/
+osmb/boundaries*

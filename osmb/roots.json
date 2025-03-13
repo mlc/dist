@@ -1,0 +1,4376 @@
+[
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "39037988",
+    "name": "Guantanamo Bay Naval Base (US)",
+    "name_en": "Guantanamo Bay Naval Base (US)",
+    "boundary": "administrative",
+    "admin_level": 1,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "22530087",
+    "name": "\uc740\uacc4\ub3c4",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-303427",
+    "name": "\u0627\u0641\u063a\u0627\u0646\u0633\u062a\u0627\u0646",
+    "name_en": "Afghanistan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3263728",
+    "name": "Akrotiri and Dhekelia",
+    "name_en": "Akrotiri and Dhekelia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-53292",
+    "name": "Shqip\u00ebria",
+    "name_en": "Albania",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192756",
+    "name": "Alg\u00e9rie \u2d4d\u2d63\u2d63\u2d30\u2d62\u2d3b\u2d54 \u0627\u0644\u062c\u0632\u0627\u0626\u0631",
+    "name_en": "Algeria",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9407",
+    "name": "Andorra",
+    "name_en": "Andorra",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-195267",
+    "name": "Angola",
+    "name_en": "Angola",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2177161",
+    "name": "Anguilla",
+    "name_en": "Anguilla",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-536900",
+    "name": "Antigua and Barbuda",
+    "name_en": "Antigua and Barbuda",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9604462",
+    "name": "Antigua and Barbuda (land mass)",
+    "name_en": null,
+    "boundary": "land_area",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-286393",
+    "name": "Argentina",
+    "name_en": "Argentina",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-364066",
+    "name": "\u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576",
+    "name_en": "Armenia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-80500",
+    "name": "Australia",
+    "name_en": "Australia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16239",
+    "name": "\u00d6sterreich",
+    "name_en": "Austria",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-364110",
+    "name": "Az\u0259rbaycan",
+    "name_en": "Azerbaijan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-547469",
+    "name": "The Bahamas",
+    "name_en": "Bahamas",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-378734",
+    "name": "\u0627\u0644\u0628\u062d\u0631\u064a\u0646",
+    "name_en": "Bahrain",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-184640",
+    "name": "\u09ac\u09be\u0982\u09b2\u09be\u09a6\u09c7\u09b6",
+    "name_en": "Bangladesh",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-547511",
+    "name": "Barbados",
+    "name_en": "Barbados",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-59065",
+    "name": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c",
+    "name_en": "Belarus",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13960314",
+    "name": "Belgische territoriale zee",
+    "name_en": "Belgian territorial sea",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-52411",
+    "name": "Belgi\u00eb \/ Belgique \/ Belgien",
+    "name_en": "Belgium",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7645548",
+    "name": "Exclusieve economische zone van Belgi\u00eb",
+    "name_en": "Belgium (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-937244",
+    "name": "Belgi\u00eb \/ Belgique \/ Belgien (land mass)",
+    "name_en": "Belgium (land mass)",
+    "boundary": "land_area",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287827",
+    "name": "Belize",
+    "name_en": "Belize",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192784",
+    "name": "B\u00e9nin",
+    "name_en": "Benin",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1993208",
+    "name": "Bermuda",
+    "name_en": "Bermuda",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-184629",
+    "name": "\u0f60\u0f56\u0fb2\u0f74\u0f42\u0f61\u0f74\u0f63\u0f0b",
+    "name_en": "Bhutan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-252645",
+    "name": "Bolivia",
+    "name_en": "Bolivia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2528142",
+    "name": "Bosna i Hercegovina \/ \u0411\u043e\u0441\u043d\u0430 \u0438 \u0425\u0435\u0440\u0446\u0435\u0433\u043e\u0432\u0438\u043d\u0430",
+    "name_en": "Bosnia and Herzegovina",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1889339",
+    "name": "Botswana",
+    "name_en": "Botswana",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-59470",
+    "name": "Brasil",
+    "name_en": "Brazil",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1993867",
+    "name": "British Indian Ocean Territory",
+    "name_en": "British Indian Ocean Territory",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-285454",
+    "name": "British Virgin Islands",
+    "name_en": "British Virgin Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2103120",
+    "name": "Brunei",
+    "name_en": "Brunei",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-186382",
+    "name": "\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f",
+    "name_en": "Bulgaria",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192783",
+    "name": "Burkina Faso",
+    "name_en": "Burkina Faso",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-195269",
+    "name": "Burundi",
+    "name_en": "Burundi",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-49898",
+    "name": "\u1796\u17d2\u179a\u17c7\u179a\u17b6\u1787\u17b6\u178e\u17b6\u1785\u1780\u17d2\u179a\u200b\u1780\u1798\u17d2\u1796\u17bb\u1787\u17b6",
+    "name_en": "Cambodia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192830",
+    "name": "Cameroun",
+    "name_en": "Cameroon",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1428125",
+    "name": "Canada",
+    "name_en": "Canada",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-535774",
+    "name": "Cabo Verde",
+    "name_en": "Cape Verde",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2185366",
+    "name": "Cayman Islands",
+    "name_en": "Cayman Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192790",
+    "name": "K\u00f6d\u00f6r\u00f6s\u00ease t\u00ee B\u00eaafr\u00eeka \/ R\u00e9publique centrafricaine",
+    "name_en": "Central African Republic",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2361304",
+    "name": "Tchad \u062a\u0634\u0627\u062f",
+    "name_en": "Chad",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-167454",
+    "name": "Chile",
+    "name_en": "Chile",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-270056",
+    "name": "\u4e2d\u56fd",
+    "name_en": "China",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12931502",
+    "name": "\u4e2d\u56fd\u2013\u5370\u5ea6\u4e89\u8bae\u5730\u533a",
+    "name_en": "China\u2013India Disputed Area",
+    "boundary": "disputed",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-120027",
+    "name": "Colombia",
+    "name_en": "Colombia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-535790",
+    "name": "Comores Komori \u062c\u0632\u0631 \u0627\u0644\u0642\u0645\u0631",
+    "name_en": "Comoros",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192794",
+    "name": "Congo",
+    "name_en": "Congo-Brazzaville",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14526317",
+    "name": "A\u00f0l\u00e6gt belti \u00cdslands",
+    "name_en": "Contiguous Zone of Iceland",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14525937",
+    "name": "Aansluitende zone van het Koninkrijk",
+    "name_en": "Contiguous Zone of the Kingdom",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2184233",
+    "name": "K\u016bki \u02bb\u0100irani",
+    "name_en": "Cook Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287667",
+    "name": "Costa Rica",
+    "name_en": "Costa Rica",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192779",
+    "name": "C\u00f4te d\u2019Ivoire",
+    "name_en": "C\u00f4te d'Ivoire",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-214885",
+    "name": "Hrvatska",
+    "name_en": "Croatia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307833",
+    "name": "Cuba",
+    "name_en": "Cuba",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307787",
+    "name": "\u039a\u03cd\u03c0\u03c1\u03bf\u03c2 - K\u0131br\u0131s",
+    "name_en": "Cyprus",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-51684",
+    "name": "\u010cesko",
+    "name_en": "Czechia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192795",
+    "name": "R\u00e9publique d\u00e9mocratique du Congo",
+    "name_en": "Democratic Republic of the Congo",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-50046",
+    "name": "Danmark",
+    "name_en": "Denmark",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14540303",
+    "name": "Danmarks eksklusive \u00f8konomiske zone",
+    "name_en": "Denmark's Exclusive Economic Zone",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17296619",
+    "name": "Disputes between Vietnam and China in South China Sea",
+    "name_en": null,
+    "boundary": "disputed",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192801",
+    "name": "Djibouti \u062c\u064a\u0628\u0648\u062a\u064a",
+    "name_en": "Djibouti",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307823",
+    "name": "Dominica",
+    "name_en": "Dominica",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307828",
+    "name": "Rep\u00fablica Dominicana",
+    "name_en": "Dominican Republic",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-305142",
+    "name": "Timor-Leste",
+    "name_en": "East Timor",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13955912",
+    "name": "Efnahagsl\u00f6gsaga \u00cdslands",
+    "name_en": "Economic Zone of Iceland",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-108089",
+    "name": "Ecuador",
+    "name_en": "Ecuador",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4463372",
+    "name": "Eesti (land area)",
+    "name_en": null,
+    "boundary": "land_area",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1473947",
+    "name": "\u0645\u0635\u0631",
+    "name_en": "Egypt",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "616957139",
+    "name": "Elema Refugee Settlement",
+    "name_en": null,
+    "boundary": "refugee_camp",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1520612",
+    "name": "El Salvador",
+    "name_en": "El Salvador",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192791",
+    "name": "Guinea Ecuatorial",
+    "name_en": "Equatorial Guinea",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-296961",
+    "name": "\u12a4\u122d\u1275\u122b Eritrea \u0625\u0631\u062a\u0631\u064a\u0627",
+    "name_en": "Eritrea",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-79510",
+    "name": "Eesti",
+    "name_en": "Estonia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-88210",
+    "name": "Eswatini",
+    "name_en": "Eswatini",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192800",
+    "name": "\u12a2\u1275\u12ee\u1335\u12eb",
+    "name_en": "Ethiopia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4121287",
+    "name": "Exclusive Economic Zone of Ireland",
+    "name_en": "Exclusive Economic Zone of Ireland",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3649463",
+    "name": "Ausschlie\u00dfliche Wirtschaftszone der Bundesrepublik Deutschland",
+    "name_en": "Exclusive Economic Zone of the Federal Republic of Germany",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13928359",
+    "name": "Exclusieve economische zone van het Koninkrijk",
+    "name_en": "Exclusive Economic Zone of the Kingdom",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9520293",
+    "name": "Extent of Japanese claim at Dokdo",
+    "name_en": null,
+    "boundary": "claim",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9520124",
+    "name": "\u0645\u062f\u0649 \u0645\u0637\u0627\u0644\u0628\u0629 \u0627\u0644\u0645\u063a\u0631\u0628 \u0628\u062c\u0632\u0631 \u0627\u0644\u062d\u0633\u064a\u0645\u0629",
+    "name_en": "Extent of Moroccan Claim at Islas Alhucemas",
+    "boundary": "claim",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9520125",
+    "name": "Extent of Moroccan Claim at Islas Chafarinas \u0645\u062f\u0649 \u0627\u0644\u0645\u0637\u0627\u0644\u0628\u0629 \u0627\u0644\u0645\u063a\u0631\u0628\u064a\u0629 \u0641\u064a \u0627\u0644\u062c\u0632\u0631 \u0627\u0644\u062c\u0639\u0641\u0631\u064a\u0629",
+    "name_en": "Extent of Moroccan Claim at Islas Chafarinas",
+    "boundary": "claim",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9520115",
+    "name": "Extent of Moroccan Claim at Perejil Island (Tura) \/ \u0645\u062f\u0649 \u0627\u0644\u0645\u0637\u0627\u0644\u0628\u0629 \u0627\u0644\u0645\u063a\u0631\u0628\u064a\u0629 \u0641\u064a \u062c\u0632\u064a\u0631\u0629 \u062a\u0648\u0631\u0629",
+    "name_en": "Extent of Moroccan Claim at Perejil Island (Tura)",
+    "boundary": "claim",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13559363",
+    "name": "Extent of Nepalese Claims at Kalapani Territory",
+    "name_en": null,
+    "boundary": "disputed",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9520186",
+    "name": "\u0645\u062f\u0649 \u0627\u0644\u0645\u0637\u0627\u0644\u0628\u0629 \u0627\u0644\u063a\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a\u0629",
+    "name_en": "Extent of Sudanese western claim",
+    "boundary": "claim",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9520136",
+    "name": "Extent of UAE Claim at Abu Musa Island",
+    "name_en": null,
+    "boundary": "claim",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2185374",
+    "name": "Falkland Islands",
+    "name_en": "Falkland Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-52939",
+    "name": "F\u00f8royar",
+    "name_en": "Faroe Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-571802",
+    "name": "Micronesia",
+    "name_en": "Federated States of Micronesia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-571747",
+    "name": "Viti",
+    "name_en": "Fiji",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-54224",
+    "name": "Suomi \/ Finland",
+    "name_en": "Finland",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14543431",
+    "name": "Fiski\u00f8ki\u00f0 vi\u00f0 F\u00f8royar",
+    "name_en": "Fishing territory around the Faroe Islands",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2202162",
+    "name": "France",
+    "name_en": "France",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16467322",
+    "name": "France (terres)",
+    "name_en": "France (Landmass)",
+    "boundary": "land_area",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192793",
+    "name": "Gabon",
+    "name_en": "Gabon",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-28699",
+    "name": "\u10e1\u10d0\u10e5\u10d0\u10e0\u10d7\u10d5\u10d4\u10da\u10dd",
+    "name_en": "Georgia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-51477",
+    "name": "Deutschland",
+    "name_en": "Germany",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192781",
+    "name": "Ghana",
+    "name_en": "Ghana",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1278736",
+    "name": "Gibraltar",
+    "name_en": "Gibraltar",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13950740",
+    "name": "\u062a\u0646\u0628 \u0628\u0632\u0631\u06af \u0648 \u062a\u0646\u0628 \u06a9\u0648\u0686\u06a9",
+    "name_en": "Greater and Lesser Tunbs",
+    "boundary": "claim",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192307",
+    "name": "\u0395\u03bb\u03bb\u03ac\u03c2",
+    "name_en": "Greece",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2184073",
+    "name": "Kalaallit Nunaat",
+    "name_en": "Greenland",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-550727",
+    "name": "Grenada",
+    "name_en": "Grenada",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1521463",
+    "name": "Guatemala",
+    "name_en": "Guatemala",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-270009",
+    "name": "Guernsey",
+    "name_en": "Guernsey",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192778",
+    "name": "Guin\u00e9e",
+    "name_en": "Guinea",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192776",
+    "name": "Guin\u00e9-Bissau",
+    "name_en": "Guinea-Bissau",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287083",
+    "name": "Guyana",
+    "name_en": "Guyana",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307829",
+    "name": "Ayiti",
+    "name_en": "Haiti",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287670",
+    "name": "Honduras",
+    "name_en": "Honduras",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-21335",
+    "name": "Magyarorsz\u00e1g",
+    "name_en": "Hungary",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-299133",
+    "name": "\u00cdsland",
+    "name_en": "Iceland",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13907493",
+    "name": "\u038a\u03bc\u03b9\u03b1\/Kardak",
+    "name_en": "Imia",
+    "boundary": "claim",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-304716",
+    "name": "India",
+    "name_en": "India",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-304751",
+    "name": "Indonesia",
+    "name_en": "Indonesia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-304938",
+    "name": "\u0627\u06cc\u0631\u0627\u0646",
+    "name_en": "Iran",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-304934",
+    "name": "\u0627\u0644\u0639\u0631\u0627\u0642",
+    "name_en": "Iraq",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-62273",
+    "name": "\u00c9ire \/ Ireland",
+    "name_en": "Ireland",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "126470842",
+    "name": "Isla Apip\u00e9 Chico",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17893358",
+    "name": "Isla Bassi",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17893359",
+    "name": "Isla Filomena Grande",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "626244000",
+    "name": "Isla Guapur\u00fa",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "126470877",
+    "name": "Isla Los Patos",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "23623225",
+    "name": "Isla San Martin",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17893357",
+    "name": "Isla Tres Cruces",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17894046",
+    "name": "Isla Verde",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-62269",
+    "name": "Isle of Man",
+    "name_en": "Isle of Man",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "10663197",
+    "name": "Islote Chingolo",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1473946",
+    "name": "\u05d9\u05e9\u05e8\u05d0\u05dc",
+    "name_en": "Israel",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-365331",
+    "name": "Italia",
+    "name_en": "Italy",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-555017",
+    "name": "Jamaica",
+    "name_en": "Jamaica",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-382313",
+    "name": "\u65e5\u672c",
+    "name_en": "Japan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-367988",
+    "name": "Jersey",
+    "name_en": "Jersey",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-18372004",
+    "name": "\u9678\u4e0a\u81ea\u885b\u968a \u65b9\u9762\u968a",
+    "name_en": "JGSDF Army",
+    "boundary": "military_district",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-184818",
+    "name": "\u0627\u0644\u0623\u0631\u062f\u0646",
+    "name_en": "Jordan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-214665",
+    "name": "\u049a\u0430\u0437\u0430\u049b\u0441\u0442\u0430\u043d",
+    "name_en": "Kazakhstan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192798",
+    "name": "Kenya",
+    "name_en": "Kenya",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-571178",
+    "name": "Kiribati",
+    "name_en": "Kiribati",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2088990",
+    "name": "Kosova \/ Kosovo",
+    "name_en": "Kosovo",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14102287",
+    "name": "\u5317\u65b9\u56db\u5cf6",
+    "name_en": "Kuril Islands Disputed Territories",
+    "boundary": "disputed",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-305099",
+    "name": "\u0627\u0644\u0643\u0648\u064a\u062a",
+    "name_en": "Kuwait",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-178009",
+    "name": "\u041a\u044b\u0440\u0433\u044b\u0437\u0441\u0442\u0430\u043d",
+    "name_en": "Kyrgyzstan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-49903",
+    "name": "\u0e9b\u0eb0\u0ec0\u0e97\u0e94\u0ea5\u0eb2\u0ea7",
+    "name_en": "Laos",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-72594",
+    "name": "Latvija",
+    "name_en": "Latvia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-184843",
+    "name": "\u0644\u0628\u0646\u0627\u0646",
+    "name_en": "Lebanon",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2093234",
+    "name": "Lesotho",
+    "name_en": "Lesotho",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192780",
+    "name": "Liberia",
+    "name_en": "Liberia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192758",
+    "name": "\u0644\u064a\u0628\u064a\u0627",
+    "name_en": "Libya",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1155955",
+    "name": "Liechtenstein",
+    "name_en": "Liechtenstein",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-72596",
+    "name": "Lietuva",
+    "name_en": "Lithuania",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2171347",
+    "name": "L\u00ebtzebuerg",
+    "name_en": "Luxembourg",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-447325",
+    "name": "Madagasikara \/ Madagascar",
+    "name_en": "Madagascar",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-195290",
+    "name": "Malawi",
+    "name_en": "Malawi",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2108121",
+    "name": "Malaysia",
+    "name_en": "Malaysia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-536773",
+    "name": "\u078b\u07a8\u0788\u07ac\u0780\u07a8\u0783\u07a7\u0787\u07b0\u0796\u07ac",
+    "name_en": "Maldives",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192785",
+    "name": "Mali",
+    "name_en": "Mali",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-365307",
+    "name": "Malta",
+    "name_en": "Malta",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-571771",
+    "name": "\u1e42aje\u1e37",
+    "name_en": "Marshall Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192763",
+    "name": "\u0645\u0648\u0631\u064a\u062a\u0627\u0646\u064a\u0627",
+    "name_en": "Mauritania",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-535828",
+    "name": "Mauritius \/ Maurice",
+    "name_en": "Mauritius",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-114686",
+    "name": "M\u00e9xico",
+    "name_en": "Mexico",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "616917358",
+    "name": "Mireyi Refugee Settlement",
+    "name_en": null,
+    "boundary": "refugee_camp",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-58974",
+    "name": "Moldova",
+    "name_en": "Moldova",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1124039",
+    "name": "Monaco",
+    "name_en": "Monaco",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10696346",
+    "name": "Monaco (zone \u00e9conomique exclusive)",
+    "name_en": "Monaco (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10691624",
+    "name": "Monaco (eaux territoriales)",
+    "name_en": "Monaco (territorial waters)",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10696347",
+    "name": "Monaco (zone contigu\u00eb)",
+    "name_en": null,
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-161033",
+    "name": "\u041c\u043e\u043d\u0433\u043e\u043b \u0443\u043b\u0441 \u182e\u1824\u1829\u182d\u1824\u182f \u1824\u182f\u1824\u1830",
+    "name_en": "Mongolia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-53296",
+    "name": "Crna Gora \/ \u0426\u0440\u043d\u0430 \u0413\u043e\u0440\u0430",
+    "name_en": "Montenegro",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-537257",
+    "name": "Montserrat",
+    "name_en": "Montserrat",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3630439",
+    "name": "Maroc \u2d4d\u2d4e\u2d56\u2d54\u2d49\u2d31 \u0627\u0644\u0645\u063a\u0631\u0628",
+    "name_en": "Morocco",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-195273",
+    "name": "Mo\u00e7ambique",
+    "name_en": "Mozambique",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "616889250",
+    "name": "Mungula 1",
+    "name_en": null,
+    "boundary": "refugee_camp",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-50371",
+    "name": "\u1019\u103c\u1014\u103a\u1019\u102c",
+    "name_en": "Myanmar",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-195266",
+    "name": "Namibia",
+    "name_en": "Namibia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-571804",
+    "name": "Naoero",
+    "name_en": "Nauru",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-184633",
+    "name": "\u0928\u0947\u092a\u093e\u0932",
+    "name_en": "Nepal",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6094953",
+    "name": "Nepal Claim - Susta Area",
+    "name_en": null,
+    "boundary": "disputed",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2323309",
+    "name": "Nederland",
+    "name_en": "Netherlands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-556706",
+    "name": "New Zealand \/ Aotearoa",
+    "name_en": "New Zealand",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287666",
+    "name": "Nicaragua",
+    "name_en": "Nicaragua",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192786",
+    "name": "Niger",
+    "name_en": "Niger",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192787",
+    "name": "Nigeria",
+    "name_en": "Nigeria",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1558556",
+    "name": "Niu\u0113",
+    "name_en": "Niue",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192734",
+    "name": "\uc870\uc120\ubbfc\uc8fc\uc8fc\uc758\uc778\ubbfc\uacf5\ud654\uad6d",
+    "name_en": "North Korea",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-53293",
+    "name": "\u0421\u0435\u0432\u0435\u0440\u043d\u0430 \u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0438\u0458\u0430",
+    "name_en": "North Macedonia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2978650",
+    "name": "Norge",
+    "name_en": "Norway",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "616911189",
+    "name": "Olua 1 Refugee Settlement",
+    "name_en": null,
+    "boundary": "refugee_camp",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "616911188",
+    "name": "Olua 2 Refugee Settlement",
+    "name_en": null,
+    "boundary": "refugee_camp",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-305138",
+    "name": "\u0639\u0645\u0627\u0646",
+    "name_en": "Oman",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307573",
+    "name": "\u067e\u0627\u06a9\u0633\u062a\u0627\u0646",
+    "name_en": "Pakistan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-571805",
+    "name": "Belau",
+    "name_en": "Palau",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1703814",
+    "name": "\u0627\u0644\u0623\u0631\u0627\u0636\u064a \u0627\u0644\u0641\u0644\u0633\u0637\u064a\u0646\u064a\u0629",
+    "name_en": "Palestinian Territories",
+    "boundary": "disputed",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287668",
+    "name": "Panam\u00e1",
+    "name_en": "Panama",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307866",
+    "name": "Papua Niugini",
+    "name_en": "Papua New Guinea",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287077",
+    "name": "Paraguay \/ Paragu\u00e1i",
+    "name_en": "Paraguay",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-288247",
+    "name": "Per\u00fa",
+    "name_en": "Peru",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-443174",
+    "name": "Pilipinas",
+    "name_en": "Philippines",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2185375",
+    "name": "Pitcairn Islands",
+    "name_en": "Pitcairn Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-49715",
+    "name": "Polska",
+    "name_en": "Poland",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9942670",
+    "name": "Polska wy\u0142\u0105czna strefa ekonomiczna",
+    "name_en": "Poland exclusive economic zone",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-936128",
+    "name": "Polska (l\u0105d)",
+    "name_en": "Poland (land mass)",
+    "boundary": "land_area",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-295480",
+    "name": "Portugal",
+    "name_en": "Portugal",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-305095",
+    "name": "\u0642\u0637\u0631",
+    "name_en": "Qatar",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-90689",
+    "name": "Rom\u00e2nia",
+    "name_en": "Romania",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-60189",
+    "name": "\u0420\u043e\u0441\u0441\u0438\u044f",
+    "name_en": "Russia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13291747",
+    "name": "\u0418\u0441\u043a\u043b\u044e\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0437\u043e\u043d\u0430 \u0420\u043e\u0441\u0441\u0438\u0438",
+    "name_en": "Russia's exclusive economic zone",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-171496",
+    "name": "Rwanda",
+    "name_en": "Rwanda",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-5441968",
+    "name": "Rep\u00fablica \u00c1rabe Saharaui Democr\u00e1tica \u0627\u0644\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0635\u062d\u0631\u0627\u0648\u064a\u0629 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a\u0629",
+    "name_en": "Sahrawi Arab Democratic Republic",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1964272",
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "name_en": "Saint Helena, Ascension and Tristan da Cunha",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-536899",
+    "name": "Saint Kitts and Nevis",
+    "name_en": "Saint Kitts and Nevis",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-550728",
+    "name": "Saint Lucia",
+    "name_en": "Saint Lucia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-550725",
+    "name": "Saint Vincent and the Grenadines",
+    "name_en": "Saint Vincent and the Grenadines",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1872673",
+    "name": "S\u0101moa",
+    "name_en": "Samoa",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-54624",
+    "name": "San Marino",
+    "name_en": "San Marino",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-535880",
+    "name": "S\u00e3o Tom\u00e9 e Pr\u00edncipe",
+    "name_en": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307584",
+    "name": "\u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629",
+    "name_en": "Saudi Arabia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192775",
+    "name": "S\u00e9n\u00e9gal",
+    "name_en": "Senegal",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1741311",
+    "name": "\u0421\u0440\u0431\u0438\u0458\u0430",
+    "name_en": "Serbia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-536765",
+    "name": "Sesel",
+    "name_en": "Seychelles",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10885200",
+    "name": "\u65af\u8bfa\u4e4c\u5c71\u4e89\u8bae\u533a",
+    "name_en": "Shinowu disputed area",
+    "boundary": "disputed",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192777",
+    "name": "Sierra Leone",
+    "name_en": "Sierra Leone",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-536780",
+    "name": "Singapore",
+    "name_en": "Singapore",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14296",
+    "name": "Slovensko",
+    "name_en": "Slovakia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-218657",
+    "name": "Slovenija",
+    "name_en": "Slovenia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1857436",
+    "name": "Solomon Islands",
+    "name_en": "Solomon Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192799",
+    "name": "Soomaaliya \u0627\u0644\u0635\u0648\u0645\u0627\u0644",
+    "name_en": "Somalia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-87565",
+    "name": "South Africa",
+    "name_en": "South Africa",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1983628",
+    "name": "South Georgia and the South Sandwich Islands",
+    "name_en": "South Georgia and the South Sandwich Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307756",
+    "name": "\ub300\ud55c\ubbfc\uad6d",
+    "name_en": "South Korea",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1656678",
+    "name": "South Sudan \u062c\u0646\u0648\u0628 \u0627\u0644\u0633\u0648\u062f\u0627\u0646",
+    "name_en": "South Sudan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1311341",
+    "name": "Espa\u00f1a",
+    "name_en": "Spain",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-536807",
+    "name": "Sri Lanka",
+    "name_en": "Sri Lanka",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192789",
+    "name": "\u0627\u0644\u0633\u0648\u062f\u0627\u0646",
+    "name_en": "Sudan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287082",
+    "name": "Suriname",
+    "name_en": "Suriname",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-52822",
+    "name": "Sverige",
+    "name_en": "Sweden",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14553467",
+    "name": "Sveriges ekonomiska zon",
+    "name_en": "Sweden's economic zone",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-51701",
+    "name": "Schweiz\/Suisse\/Svizzera\/Svizra",
+    "name_en": "Switzerland",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-184840",
+    "name": "\u0633\u0648\u0631\u064a\u0627",
+    "name_en": "Syria",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-449220",
+    "name": "\u81fa\u7063",
+    "name_en": "Taiwan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-214626",
+    "name": "\u0422\u043e\u04b7\u0438\u043a\u0438\u0441\u0442\u043e\u043d",
+    "name_en": "Tajikistan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-195270",
+    "name": "Tanzania",
+    "name_en": "Tanzania",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14524408",
+    "name": "Landhelgi \u00cdslands",
+    "name_en": "Territorial Sea of Iceland",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2067731",
+    "name": "\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e44\u0e17\u0e22",
+    "name_en": "Thailand",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192774",
+    "name": "Gambia",
+    "name_en": "The Gambia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192782",
+    "name": "Togo",
+    "name_en": "Togo",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2186600",
+    "name": "Tokelau",
+    "name_en": "Tokelau",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2186665",
+    "name": "Tonga",
+    "name_en": "Tonga",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-555717",
+    "name": "Trinidad and Tobago",
+    "name_en": "Trinidad and Tobago",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192757",
+    "name": "\u062a\u0648\u0646\u0633",
+    "name_en": "Tunisia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-174737",
+    "name": "T\u00fcrkiye",
+    "name_en": "Turkey",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-223026",
+    "name": "T\u00fcrkmenistan",
+    "name_en": "Turkmenistan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-547479",
+    "name": "Turks and Caicos Islands",
+    "name_en": "Turks and Caicos Islands",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2177266",
+    "name": "Tuvalu",
+    "name_en": "Tuvalu",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192796",
+    "name": "Uganda",
+    "name_en": "Uganda",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-60199",
+    "name": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+    "name_en": "Ukraine",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-307763",
+    "name": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629",
+    "name_en": "United Arab Emirates",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-62149",
+    "name": "United Kingdom",
+    "name_en": "United Kingdom",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14531196",
+    "name": "United Kingdom Exclusive Economic Zone",
+    "name_en": "United Kingdom Exclusive Economic Zone",
+    "boundary": "maritime",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-148838",
+    "name": "United States",
+    "name_en": "United States",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-287072",
+    "name": "Uruguay",
+    "name_en": "Uruguay",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-196240",
+    "name": "O\u02bbzbekiston",
+    "name_en": "Uzbekistan",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2177246",
+    "name": "Vanuatu",
+    "name_en": "Vanuatu",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-36989",
+    "name": "Civitas Vaticana - Citt\u00e0 del Vaticano",
+    "name_en": "Vatican City",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-272644",
+    "name": "Venezuela",
+    "name_en": "Venezuela",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-49915",
+    "name": "Vi\u1ec7t Nam",
+    "name_en": "Vietnam",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-305092",
+    "name": "\u0627\u0644\u064a\u0645\u0646",
+    "name_en": "Yemen",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-195271",
+    "name": "Zambia",
+    "name_en": "Zambia",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-195272",
+    "name": "Zimbabwe",
+    "name_en": "Zimbabwe",
+    "boundary": "administrative",
+    "admin_level": 2,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2177258",
+    "name": "Nouvelle-Cal\u00e9donie (zone \u00e9conomique exclusive)",
+    "name_en": "New Caledonia (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 3,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9501031",
+    "name": "Saint-Barth\u00e9lemy (ZEE)",
+    "name_en": "Saint Barth\u00e9lemy (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 3,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9501032",
+    "name": "Saint-Martin (France, ZEE)",
+    "name_en": "Saint Martin (France, EEZ)",
+    "boundary": "maritime",
+    "admin_level": 3,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3406823",
+    "name": "Dakhla-Oued Ed-Dahab \u2d37\u2d30\u2d45\u2d4d\u2d30-\u2d61\u2d30\u2d37 \u2d37\u2d30\u2d40\u2d30\u2d31 \u0627\u0644\u062f\u0627\u062e\u0644\u0629-\u0648\u0627\u062f\u064a \u0627\u0644\u0630\u0647\u0628",
+    "name_en": "Dakhla-Oued Ed-Dahab",
+    "boundary": "administrative",
+    "admin_level": 4,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9483303",
+    "name": "Guadeloupe (ZEE)",
+    "name_en": "Guadeloupe (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 4,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1803010",
+    "name": "\u05d9\u05d4\u05d5\u05d3\u05d4 \u05d5\u05e9\u05d5\u05de\u05e8\u05d5\u05df",
+    "name_en": "Judea and Samaria",
+    "boundary": "administrative",
+    "admin_level": 4,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2424260",
+    "name": "La\u00e2youne-Sakia El Hamra \u2d4d\u2d44\u2d62\u2d53\u2d4f-\u2d59\u2d30\u2d47\u2d62\u2d30 \u2d4d\u2d43\u2d30\u2d4e\u2d54\u2d30 \u0627\u0644\u0639\u064a\u0648\u0646 \u0627\u0644\u0633\u0627\u0642\u064a\u0629 \u0627\u0644\u062d\u0645\u0631\u0627\u0621",
+    "name_en": "La\u00e2youne-Sakia El Hamra",
+    "boundary": "administrative",
+    "admin_level": 4,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9483304",
+    "name": "Martinique (ZEE)",
+    "name_en": "Martinique (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 4,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-18396685",
+    "name": "\u897f\u85cf\u81ea\u6cbb\u533a \u0f56\u0f7c\u0f51\u0f0b\u0f62\u0f44\u0f0b\u0f66\u0f90\u0fb1\u0f7c\u0f44\u0f0b\u0f63\u0f97\u0f7c\u0f44\u0f66\u0f0d",
+    "name_en": "Tibet",
+    "boundary": "legal",
+    "admin_level": 4,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733518",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0628\u064a\u062a \u0644\u062d\u0645",
+    "name_en": "Bethlehem Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733519",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0627\u0644\u062e\u0644\u064a\u0644",
+    "name_en": "Hebron Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733520",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u062c\u0646\u064a\u0646",
+    "name_en": "Jenin Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733521",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0623\u0631\u064a\u062d\u0627",
+    "name_en": "Jericho Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733522",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u063a\u0644\u0627\u0641 \u0627\u0644\u0642\u062f\u0633",
+    "name_en": "Jerusalem Periphery Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13518111",
+    "name": "Kapoeta East",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 5,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12823139",
+    "name": "Mukah Division - Beting Patinggi Ali Shoals (disputed)",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 5,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733523",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0646\u0627\u0628\u0644\u0633",
+    "name_en": "Nablus Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733524",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0642\u0644\u0642\u064a\u0644\u064a\u0629",
+    "name_en": "Qalqilya Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733525",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0631\u0627\u0645 \u0627\u0644\u0644\u0647 \u0648\u0627\u0644\u0628\u064a\u0631\u0629",
+    "name_en": "Ramallah and al-Bireh Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733526",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0633\u0644\u0641\u064a\u062a\u200e",
+    "name_en": "Salfit Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733527",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0637\u0648\u0628\u0627\u0633\u200e",
+    "name_en": "Tubas Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4733528",
+    "name": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0637\u0648\u0644\u0643\u0631\u0645",
+    "name_en": "Tulkarm Governorate",
+    "boundary": "disputed",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-278664",
+    "name": "Ulster",
+    "name_en": "Ulster",
+    "boundary": "historic",
+    "admin_level": 5,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7698425",
+    "name": "Akwesasne \/ Ahkwes\u00e1hsne",
+    "name_en": "Akwesasne",
+    "boundary": "aboriginal_lands",
+    "admin_level": 7,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-11285925",
+    "name": "NEAFK Barents see",
+    "name_en": "NEAFC (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 7,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1377972",
+    "name": "\u05e2'\u05d2'\u05e8",
+    "name_en": "Ghajar",
+    "boundary": "administrative",
+    "admin_level": 8,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "108767350",
+    "name": "Corriverton",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 9,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7268033",
+    "name": "Matema",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 9,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13494993",
+    "name": "\u0391\u03c1\u03c7\u03ac\u03b3\u03b3\u03b5\u03bb\u03bf\u03c2 \u039c\u03b9\u03c7\u03b1\u03ae\u03bb",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 9,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-15016366",
+    "name": "Bum Sirpi",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 10,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17002860",
+    "name": "El Moj\u00f3n N\u00ba 7",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 10,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17002861",
+    "name": "La Trocha",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 10,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602593",
+    "name": "Abrolhos Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2855710",
+    "name": "\/Ai-\/Ais Richtersveld Transfrontier Park (ARTP)",
+    "name_en": null,
+    "boundary": "national_park",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-15097517",
+    "name": "America\/Puerto_Rico timezone",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13603980",
+    "name": "Anindilyakwa Indigenous Protected Area sea country",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2186646",
+    "name": "Antarctica",
+    "name_en": "Antarctica",
+    "boundary": "continent",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6307897",
+    "name": "Apollo Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602094",
+    "name": "Arafura Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-18585046",
+    "name": "Ardahan Posof Yaban Hayat\u0131 Geli\u015ftirme Sahas\u0131",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3424554",
+    "name": "\u00c1rea de Prote\u00e7\u00e3o Ambiental Costa dos Corais",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12390141",
+    "name": "\u00c1rea de Prote\u00e7\u00e3o Ambiental dos Recifes de Corais",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7512406",
+    "name": "\u00c1rea Marinha Protegida do Banco Condor",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7512409",
+    "name": "\u00c1rea Marinha Protegida do Monte Submarino Antialtair",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6090144",
+    "name": "Argentina (EEZ)",
+    "name_en": "Argentina (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426820",
+    "name": "Argo-Rowley Terrace Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602098",
+    "name": "Arnhem Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2647638",
+    "name": "Australia (EEZ)",
+    "name_en": "Australia (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4016746",
+    "name": "Balkans",
+    "name_en": "Balkans",
+    "boundary": "land_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14019592",
+    "name": "\u0411\u0430\u0440\u0430\u0431\u0438\u043d\u0441\u043a\u0430\u044f \u043d\u0438\u0437\u043c\u0435\u043d\u043d\u043e\u0441\u0442\u044c",
+    "name_en": "Baraba Steppe",
+    "boundary": "geomorphological-unit",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12728392",
+    "name": "Benelux",
+    "name_en": "Benelux",
+    "boundary": "administrative_cooperation",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9904293",
+    "name": "Zona de Prote\u00e7\u00e3o Especial das Ilhas Berlengas",
+    "name_en": "Berlengas Islands Special Protection Area",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6307899",
+    "name": "Boags Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-5748044",
+    "name": "Zona Econ\u00f4mica Exclusiva do Brasil",
+    "name_en": "Brazil (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602571",
+    "name": "Bremer Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3969434",
+    "name": "British Overseas Territories",
+    "name_en": "British Overseas Territories",
+    "boundary": "administrative",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16391635",
+    "name": "Karpaten \/ Karpati \/ K\u00e1rp\u00e1tok \/ Karpaty \/ Mun\u021bii Carpa\u021bi \/ \u041a\u0430\u0440\u043f\u0430\u0442\u0438",
+    "name_en": "Carpathian Mountains",
+    "boundary": "geomorphological-unit",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14356031",
+    "name": "Changchenmo Range",
+    "name_en": "Changchenmo Range",
+    "boundary": "region",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3969510",
+    "name": "Zona econ\u00f3mica exclusiva de Chile",
+    "name_en": "Chile exclusive economic zone",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12931402",
+    "name": "\u4e2d\u56fd\u2013\u4e0d\u4e39\u4e89\u8bae\u5730\u533a",
+    "name_en": "China\u2013Bhutan Disputed Area",
+    "boundary": "disputed",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-5852766",
+    "name": "Chukchi Sea",
+    "name_en": "Chukchi Sea",
+    "boundary": "place",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13414002",
+    "name": "Clifford and Cloudy Bay Marine Mammal Sanctuary",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2083719",
+    "name": "Colombia (EEZ)",
+    "name_en": "Colombia (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-279045",
+    "name": "Contiguous Zone of the United States",
+    "name_en": "Contiguous Zone of the United States",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8448061",
+    "name": "Coral Sea Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2083772",
+    "name": "Costa Rica (EEZ)",
+    "name_en": "Costa Rica (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16274879",
+    "name": "Crocodile Islands Maringa Indigenous Protected Area",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602317",
+    "name": "Dampier Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13603738",
+    "name": "Dhimurru Indigenous Protected Area sea country",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7030137",
+    "name": "\u6771\u6c99\u74b0\u7901\u570b\u5bb6\u516c\u5712",
+    "name_en": "Dongsha Atoll National Park",
+    "boundary": "national_park",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426745",
+    "name": "Eastern Recherche Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6253435",
+    "name": "\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u043e-\u0421\u0438\u0431\u0438\u0440\u0441\u043a\u043e\u0435 \u043c\u043e\u0440\u0435",
+    "name_en": "East Siberian Sea",
+    "boundary": "place",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7751575",
+    "name": "Ecuador (EEZ)",
+    "name_en": "Ecuador (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9991145",
+    "name": "ZEE Espa\u00f1a",
+    "name_en": "EEZ Spain",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8396991",
+    "name": "Eighty Mile Beach Australian Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7829528",
+    "name": "\u05e9\u05de\u05d5\u05e8\u05ea \u05d8\u05d1\u05e2 \u05e2\u05d9\u05df \u05d2'\u05d9\u05e0\u05d3\u05d4",
+    "name_en": "Ein Ginda Nature Reserve",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10639156",
+    "name": "Manche et Mer du Nord",
+    "name_en": "English Channel and North Sea",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9911307",
+    "name": "Zona de Prote\u00e7\u00e3o Especial dos Estu\u00e1rios dos rios Minho e Coura",
+    "name_en": "Estuary of Minho and Coura Rivers Special Protection Area",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-279001",
+    "name": "Exclusive Economic Zone of the United States",
+    "name_en": "Exclusive Economic Zone of the United States",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-15259894",
+    "name": "Falkland Islands (EEZ)",
+    "name_en": null,
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4080404",
+    "name": "Fasht bu Saafa Hexagon",
+    "name_en": null,
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13955913",
+    "name": "Fiskerisonen ved Jan Mayen",
+    "name_en": "Fisheries protection zone around Jan Mayen",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13955914",
+    "name": "Fiskevernsonen ved Svalbard",
+    "name_en": "Fisheries protection zone around Svalbard",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10263428",
+    "name": "Florida Keys National Marine Sanctuary",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7787834",
+    "name": "France (La R\u00e9union - \u00cele Tromelin) - Zone \u00c9conomique Exclusive",
+    "name_en": "France - La R\u00e9union - Tromelin Island (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6307902",
+    "name": "Franklin Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16298532",
+    "name": "Fraser Island Fish Habitat Area",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9965686",
+    "name": "Zone Economique Exclusive de la Polyn\u00e9sie Fran\u00e7aise",
+    "name_en": "French Polynesia (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426822",
+    "name": "Gascoyne Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602579",
+    "name": "Geographe Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426741",
+    "name": "Great Australian Bight Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16623817",
+    "name": "Great Barrier Reef Coast Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10156269",
+    "name": "Great Barrier Reef World Heritage Area",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602103",
+    "name": "Gulf of Carpentaria Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13222504",
+    "name": "Guyane (ZEE)",
+    "name_en": "Guyane (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8449402",
+    "name": "Heard Island and McDonald Islands Marine Reserve",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16799549",
+    "name": "\u00c1rea Marina Costera Protegida de M\u00faltiples Usos Archipi\u00e9lago de Humboldt",
+    "name_en": "Humboldt Archipelago Multi-Use Coastal Marine Protected Area",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602030",
+    "name": "Hunter Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6307904",
+    "name": "Huon Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3870917",
+    "name": "Iberia",
+    "name_en": "Iberian Peninsula",
+    "boundary": "land_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-192797",
+    "name": "Elemi Triangle \u0645\u062b\u0644\u062b \u0625\u0644\u064a\u0645\u0649",
+    "name_en": "Ilemi Triangle",
+    "boundary": "administrative",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602027",
+    "name": "Jervis Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602086",
+    "name": "Joseph Bonaparte Gulf Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602590",
+    "name": "Jurien Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3954497",
+    "name": "Kamet Group",
+    "name_en": null,
+    "boundary": "region",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10770937",
+    "name": "Karakoram \u0642\u0631\u0627\u0642\u0631\u0645",
+    "name_en": "Karakoram",
+    "boundary": "region",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14101768",
+    "name": "Kashmir - \u06a9\u0634\u0645\u06cc\u0631",
+    "name_en": null,
+    "boundary": "disputed",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4626458",
+    "name": "Kavango Zambezi Transfrontier Conservation Area",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3316473",
+    "name": "\u041a\u0430\u0441\u043f\u0438\u0439 \u0442\u0435\u04a3\u0456\u0437\u0456\u043d\u0434\u0435\u0433\u0456 \u049a\u0430\u0437\u0430\u049b\u0441\u0442\u0430\u043d \u0415\u042d\u0410",
+    "name_en": "Kazakhstan EEZ in Caspian Sea",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426817",
+    "name": "Kimberley Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9112011",
+    "name": "Kingdom of Denmark",
+    "name_en": "Kingdom of Denmark",
+    "boundary": "administrative",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9558192",
+    "name": "Kluane \/ Wrangell-St. Elias \/ Glacier Bay \/ Tatshenshini-Alsek",
+    "name_en": "Kluane \/ Wrangell-St. Elias \/ Glacier Bay \/ Tatshenshini-Alsek",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-5576397",
+    "name": "\u041a\u043e\u043c\u0430\u043d\u0434\u043e\u0440\u0441\u043a\u0438\u0439 \u0437\u0430\u043f\u043e\u0432\u0435\u0434\u043d\u0438\u043a",
+    "name_en": "Komandorsky Nature Reserve",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13284766",
+    "name": "\uc870\uc120\/\ud55c\uad6d",
+    "name_en": "Korea",
+    "boundary": "historic",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14119344",
+    "name": "\u041a\u0443\u043b\u0443\u043d\u0434\u0438\u043d\u0441\u043a\u0430\u044f \u0440\u0430\u0432\u043d\u0438\u043d\u0430",
+    "name_en": "Kulunda Steppe",
+    "boundary": "geomorphological-unit",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602102",
+    "name": "Limmen Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8425530",
+    "name": "Lord Howe Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13334224",
+    "name": "Lower Sio wetland",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8444307",
+    "name": "Macquarie Island Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14001281",
+    "name": "Maghreb",
+    "name_en": "Maghreb",
+    "boundary": "place",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17990531",
+    "name": "\u0627\u0644\u0645\u0634\u0631\u0642 \u0627\u0644\u0639\u0631\u0628\u064a",
+    "name_en": "Mashriq",
+    "boundary": "place",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8390145",
+    "name": "Mermaid Reef Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10621716",
+    "name": "Mers Celtiques - Talus du golfe de Gascogne",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14013535",
+    "name": "Mesopotamia \/ Mezopotamya \/ \u039c\u03b5\u03c3\u03bf\u03c0\u03bf\u03c4\u03b1\u03bc\u03af\u03b1 \/ \u0628\u0644\u0627\u062f \u0627\u0644\u0631\u0627\u0641\u062f\u064a\u0646 \/ \u0712\u071d\u072c \u0722\u0717\u072a\u071d\u0722",
+    "name_en": "Mesopotamia",
+    "boundary": "historic",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12476803",
+    "name": "Reserva de la Bi\u00f3sfera Caribe Mexicano",
+    "name_en": "Mexican Caribbean Biosphere Reserve",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8401124",
+    "name": "Montebello Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3283122",
+    "name": "\u0e2d\u0e38\u0e17\u0e22\u0e32\u0e19\u0e41\u0e2b\u0e48\u0e07\u0e0a\u0e32\u0e15\u0e34\u0e2b\u0e21\u0e39\u0e48\u0e40\u0e01\u0e32\u0e30\u0e25\u0e31\u0e19\u0e15\u0e32",
+    "name_en": "Mu Ko Lanta National Park",
+    "boundary": "national_park",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6307905",
+    "name": "Murray Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12885341",
+    "name": "\u05e9\u05de\u05d5\u05e8\u05ea \u05d8\u05d1\u05e2 \u05e0\u05d7\u05dc \u05d9\u05e8\u05de\u05d5\u05da",
+    "name_en": "Nahal Yarmukh Nature Reserve",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3954309",
+    "name": "Nanda Devi Group",
+    "name_en": null,
+    "boundary": "region",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16228117",
+    "name": "Natura 2000 des R\u00e9cifs du Talus du Golfe de Gascogne",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2647601",
+    "name": "New Zealand (EEZ)",
+    "name_en": "New Zealand (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-5945359",
+    "name": "Nicaragua (EEZ)",
+    "name_en": "Nicaragua (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13529347",
+    "name": "NLL \uc774\ub0a8 \ud55c\uad6d \uc804\uccb4\uc758 \uc601\ud574\uc774\ub098 \ub300\ud55c\ubbfc\uad6d \uc601\ud574\ub294 \uc544\ub2cc \uc9c0\uc5ed",
+    "name_en": null,
+    "boundary": "region",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9051063",
+    "name": "North Sea \/ Nordsee \/ Noordzee \/ Nords\u00f8en \/ Nordsj\u00f8en \/ Mer du Nord",
+    "name_en": "North Sea",
+    "boundary": "place",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13955915",
+    "name": "Norges \u00f8konomiske sone",
+    "name_en": "Norwegian Economic Zone",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "847211536",
+    "name": "Parc National de Togodo Sud",
+    "name_en": null,
+    "boundary": "national_park",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10342563",
+    "name": "Parc naturel de la mer de Corail",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9316377",
+    "name": "Parc naturel marin de l'Estuaire de la Gironde et de la Mer des Pertuis",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-549575",
+    "name": "Parc naturel marin de Mayotte",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-2050681",
+    "name": "Parc naturel marin des Glorieuses",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6958708",
+    "name": "Parque Nacional Archipi\u00e9lago de Juan Fern\u00e1ndez",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16116849",
+    "name": "Parque Nacional Marino Cayos Misquitos",
+    "name_en": null,
+    "boundary": "national_park",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "914668605",
+    "name": "Parque Nacional Revillagigedo",
+    "name_en": null,
+    "boundary": "national_park",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-1132401",
+    "name": "Patagonia",
+    "name_en": "Patagonia",
+    "boundary": "region",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9299402",
+    "name": "P\u00e9rim\u00e8tre de protection de la r\u00e9serve naturelle des Terres australes fran\u00e7aises",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-4263589",
+    "name": "Philippine (EEZ)",
+    "name_en": "Philippine (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9142685",
+    "name": "Phoenix Islands Protected Area",
+    "name_en": "Phoenix Islands Protected Area",
+    "boundary": "national_park",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17403882",
+    "name": "Pitcairn Islands Marine Protected Area",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14373815",
+    "name": "Prince Edward Islands Marine Protected Area",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "1205327963",
+    "name": "Reserva de la Bi\u00f3sfera Banco Chinchorro",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12451236",
+    "name": "Reserva de la Bi\u00f3sfera Islas del Pac\u00edfico de la Pen\u00ednsula de Baja California",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12447490",
+    "name": "Reserva de la Bi\u00f3sfera Pac\u00edfico Mexicano Profundo",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-12929207",
+    "name": "Reserva de la Bi\u00f3sfera Tibur\u00f3n Ballena",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-3411897",
+    "name": "R\u00e9serve naturelle nationale des Terres australes fran\u00e7aises",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "201107000",
+    "name": "R\u00e9serve totale d'Oti Mandouri",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-7008461",
+    "name": "\u041d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0430\u0440\u043a \u00ab\u0420\u0443\u0441\u0441\u043a\u0430\u044f \u0410\u0440\u043a\u0442\u0438\u043a\u0430\u00bb",
+    "name_en": "Russian Arctic National Park",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13291866",
+    "name": "Sango wetland",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10714647",
+    "name": "Santuario Marino Arrecifes del Sureste",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-10714649",
+    "name": "Santuario Marino Arrecifes del Suroeste",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9621450",
+    "name": "\u041e\u0445\u043e\u0442\u0441\u043a\u043e\u0435 \u043c\u043e\u0440\u0435",
+    "name_en": "Sea of Okhotsk",
+    "boundary": "place",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-11612117",
+    "name": "\u9493\u9c7c\u5c9b\u53ca\u5176\u9644\u5c5e\u5c9b\u5c7f\/\u91e3\u9b5a\u81fa\u5217\u5dbc\/\u5c16\u95a3\u8af8\u5cf6",
+    "name_en": "Senkaku Islands \/ Diaoyudao Islands \/ Diaoyutai Islands",
+    "boundary": "disputed",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602310",
+    "name": "Shark Bay Australian Marine Reserve",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6803599",
+    "name": "Litoral Norte",
+    "name_en": "Site of Community Importance Litoral Norte",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9868597",
+    "name": "Maceda-Praia da Vieira",
+    "name_en": "Site of Community Importance Maceda-Praia da Vieira",
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-530469",
+    "name": "South Africa (EEZ)",
+    "name_en": "South Africa (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17170852",
+    "name": "Cono Sur",
+    "name_en": "Southern Cone",
+    "boundary": "region",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426743",
+    "name": "South-west Corner Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14937802",
+    "name": "Sundarbans",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17078221",
+    "name": "\u0633\u0648\u0631\u064a\u0629",
+    "name_en": "Syria",
+    "boundary": "claimed_administrative",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6307908",
+    "name": "Tasman Fracture Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13618823",
+    "name": "Thuwathu\/Bujimulla Indigenous Protected Area sea country",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-9262659",
+    "name": "Tokalo WLS",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16205923",
+    "name": "Torres Strait Dugong Sanctuary",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602566",
+    "name": "Twilight Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426739",
+    "name": "Two Rocks Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-6089549",
+    "name": "Uruguay (EEZ)",
+    "name_en": "Uruguay (EEZ)",
+    "boundary": "maritime",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "185783278",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "186898341",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "186903059",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "186900135",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "185784610",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "185786072",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "186899742",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "185214849",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "185784609",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "185786073",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "185214847",
+    "name": "US DOD",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16732433",
+    "name": "UTC+00:00 standard time",
+    "name_en": "UTC+00:00 standard time",
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16819467",
+    "name": "UTC+01:00 standard time",
+    "name_en": "UTC+01:00 standard time",
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16710856",
+    "name": "UTC-01:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-16819468",
+    "name": "UTC+02:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14906453",
+    "name": "UTC-02:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14870024",
+    "name": "UTC-03:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14762542",
+    "name": "UTC-04:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13514841",
+    "name": "UTC-05:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14576147",
+    "name": "UTC-06:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14599322",
+    "name": "UTC\u221207:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14634995",
+    "name": "UTC\u221208:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14634994",
+    "name": "UTC\u221209:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14740835",
+    "name": "UTC\u221210:00 standard time",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14929666",
+    "name": "UTC\u221211:00",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-14926090",
+    "name": "UTC+14",
+    "name_en": null,
+    "boundary": "timezone",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602099",
+    "name": "Wessel Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8602106",
+    "name": "West Cape York Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426742",
+    "name": "Western Eyre Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-8426744",
+    "name": "Western Kangaroo Island Australian Marine Park",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": true
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17189198",
+    "name": "\u0413\u0456\u0434\u0440\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0438\u0439 \u0437\u0430\u043a\u0430\u0437\u043d\u0438\u043a \u00ab\u0411\u043e\u0440\u043a\u0438\u00bb",
+    "name_en": null,
+    "boundary": "protected_area",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-15772641",
+    "name": "\u0418\u0448\u0438\u043c\u0441\u043a\u0430\u044f \u0440\u0430\u0432\u043d\u0438\u043d\u0430",
+    "name_en": null,
+    "boundary": "geomorphological-unit",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-18303064",
+    "name": "\u041a\u0443\u0440\u0433\u0430\u043d \u0414\u0440\u0443\u0436\u0431\u044b \/ \u041a\u0443\u0440\u0433\u0430\u043d \u0414\u0440\u0443\u0436\u0431\u0438",
+    "name_en": null,
+    "boundary": "locality",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-17406609",
+    "name": "\u041f\u043e\u043b\u0435 \u0447\u0443\u0434\u0435\u0441",
+    "name_en": null,
+    "boundary": "neighbourhood",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "1303371577",
+    "name": "\u0422\u0430\u043d\u043d\u0443-\u041e\u043b\u0430",
+    "name_en": null,
+    "boundary": "geomorphological-unit",
+    "admin_level": 0,
+    "children": false
+  },
+  {
+    "parent_boundary_id": "#",
+    "boundary_id": "-13425948",
+    "name": "\u4e2d\u56fd \u5357\u6c99\u7fa4\u5c9b \u7687\u8def\u7901",
+    "name_en": null,
+    "boundary": "administrative",
+    "admin_level": 0,
+    "children": false
+  }
+]
