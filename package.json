@@ -6,7 +6,6 @@
   "author": "mike castleman",
   "license": "MIT",
   "private": true,
-  "type": "module",
   "scripts": {
     "calc": "ts-node src/index.ts",
     "score": "ts-node src/points.ts",
