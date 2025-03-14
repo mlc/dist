@@ -84,8 +84,10 @@ const levels: Record<string, number[] | undefined> = {
   AG: [2],
   LK: [5],
   BF: [5],
-  GR: [5],
+  GR: [3, 5],
   RS: [6],
+  DM: [2],
+  LC: [2],
 };
 
 const extras: Record<string, number[]> = {
@@ -108,6 +110,7 @@ const extraExtras: [string, string, number[]][] = [
   ['New Caledonia', '-3407643', [6]],
   ['Dakhla', '-3406823', [4]],
   ['Laayoune', '-2424260', [4]],
+  ['Dublin', '-282800', [7]],
 ];
 
 const noRecurse = new Set(['NL']);

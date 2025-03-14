@@ -41,15 +41,13 @@ interface OsmProps {
   boundary?: 'administrative';
 }
 
-type OsmBoundaries = FeatureCollection<Polygon | MultiPolygon, OsmProps>;
+export type OsmBoundaries = FeatureCollection<Polygon | MultiPolygon, OsmProps>;
 
 const getMap = (): Promise<MapMaking> =>
   readFile(process.env.HOME + '/Download/merged.json', 'utf-8').then(
     JSON.parse
   );
 
-// https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/
-// ogr2ogr ne_10m_admin_1_states_provinces.json -f GeoJSON ne_10m_admin_1_states_provinces.shp
 const getSubdivs = async (): Promise<OsmBoundaries> => {
   const dir = await readdir(__dirname + '/../osmb', { withFileTypes: true });
   const files = dir
@@ -84,15 +82,16 @@ const customCleaners: Record<string, RegExp[]> = {
   AL: [/ County$/],
   AM: [/ Province$/],
   AZ: [/ rayonu$/, / District$/],
-  BA: [/ Canton$/],
+  BA: [/ Canton$/, / District$/],
   BD: [/ Division$/],
   BT: [/ District$/],
   BW: [/ District$/],
   BY: [/ Region$/],
   BZ: [/ District$/],
-  CL: [/ Region$/],
+  CL: [/ Region$/, /^Región (del? )?/],
   CN: [/ Province$/],
-  CZ: [/ Region$/],
+  CY: [/ District$/, / British Sovereign Base Area$/],
+  CZ: [/ Region$/, / kraj$/],
   DK: [/^Region /],
   EE: [/ County$/],
   ET: [/ Region$/],
@@ -102,6 +101,8 @@ const customCleaners: Record<string, RegExp[]> = {
   HR: [/ County$/, / županija$/],
   HT: [/^Département du /],
   IE: [/^County /],
+  IL: [/ District$/],
+  IN: [/ Islands$/],
   IQ: [/ Governorate$/],
   IR: [/ Province$/],
   JP: [/ Prefecture$/],
@@ -110,10 +111,11 @@ const customCleaners: Record<string, RegExp[]> = {
   KW: [/ Governorate$/],
   KZ: [/ [Rr]egion$/],
   LA: [/ Province$/],
+  LB: [/ Governorate$/],
   LK: [/ District$/],
   LR: [/ County$/],
   LS: [/ District$/],
-  MD: [/ District$/, / Municipality$/],
+  MD: [/ District$/, / Municipality$/, /^Raionul /, /^Municipiul /],
   ME: [/ Municipality$/],
   MM: [/ Region$/, / State$/],
   MV: [/ Atoll$/],
@@ -151,16 +153,22 @@ const removeDiacritics = (s: string, country?: string) => {
   return (customCleaners[country ?? ''] ?? [])
     .reduce((acc, re) => acc.replace(re, ''), base)
     .normalize('NFD')
-    .replace(/[\p{Diacritic}']/gu, '')
-    .replace(/[\p{White_Space}_-]+/gu, ' ')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/[\p{White_Space}_'-]+/gu, ' ')
+    .replace(/\bSt(\.|\b)/g, 'Saint')
     .replace(/ı/gu, 'i')
     .trim()
     .toLowerCase();
 };
 
 const nameMatch = (tag: string, subdiv: OsmProps, country: string) => {
-  const candidates = [subdiv.name, subdiv.name_en];
-  const cleanTag = removeDiacritics(tag.split('_').slice(0, -1).join(' '));
+  const candidates = [subdiv.name, subdiv.name_en].flatMap(
+    (s) => s?.split(/\s*[/|]\s*/) ?? []
+  );
+  const cleanTag = removeDiacritics(
+    tag.split('_').slice(0, -1).join(' '),
+    country
+  );
   return candidates.some(
     (name) => name && cleanTag === removeDiacritics(name, country)
   );
