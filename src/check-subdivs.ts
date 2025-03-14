@@ -7,6 +7,7 @@ import Flatbush from 'flatbush';
 import { getCoord } from '@turf/invariant';
 import booleanPointInPolygon from '@turf/boolean-point-in-polygon';
 import { format as formatCsv } from '@fast-csv/format';
+import cyrlToLatn from './cyrl-to-latn';
 
 export interface MapMakingExtra {
   tags?: string[];
@@ -120,6 +121,10 @@ const customCleaners: Record<string, RegExp[]> = {
   NP: [/ Province$/, / Pradesh$/],
   NZ: [/ District$/],
   OT: [/ District$/],
+  OM: [/ Governorate$/],
+  PL: [/ Voivodeship$/],
+  RS: [/ upravni okrug$/, / Administrative District$/],
+  RU: [/ ?– ?.*$/, / (Autonomous )?Oblast$/, / Krai$/, /^Republic of /],
   RW: [/ Province$/],
   SA: [/ Province$/, / Region$/],
   SE: [/ County$/],
@@ -141,15 +146,17 @@ const customCleaners: Record<string, RegExp[]> = {
   ZM: [/ Province$/],
 };
 
-const removeDiacritics = (s: string, country?: string) =>
-  (customCleaners[country ?? ''] ?? [])
-    .reduce((acc, re) => acc.replace(re, ''), s)
+const removeDiacritics = (s: string, country?: string) => {
+  const base = country === 'RS' ? cyrlToLatn(s) : s;
+  return (customCleaners[country ?? ''] ?? [])
+    .reduce((acc, re) => acc.replace(re, ''), base)
     .normalize('NFD')
     .replace(/[\p{Diacritic}']/gu, '')
     .replace(/[\p{White_Space}_-]+/gu, ' ')
     .replace(/ı/gu, 'i')
     .trim()
     .toLowerCase();
+};
 
 const nameMatch = (tag: string, subdiv: OsmProps, country: string) => {
   const candidates = [subdiv.name, subdiv.name_en];

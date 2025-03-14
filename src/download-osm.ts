@@ -35,6 +35,7 @@ const hacks: Record<string, string | undefined> = {
   KR: 'South Korea',
   CD: 'Democratic Republic of the Congo',
   VG: 'British Virgin Islands',
+  RU: 'Russia',
 };
 
 const levels: Record<string, number[] | undefined> = {
@@ -84,6 +85,7 @@ const levels: Record<string, number[] | undefined> = {
   LK: [5],
   BF: [5],
   GR: [5],
+  RS: [6],
 };
 
 const extras: Record<string, number[]> = {
@@ -104,6 +106,8 @@ const extraExtras: [string, string, number[]][] = [
   ['Metropolitan France', '-1403916', [4]],
   ['French Polynesia', '-3412620', [6]],
   ['New Caledonia', '-3407643', [6]],
+  ['Dakhla', '-3406823', [4]],
+  ['Laayoune', '-2424260', [4]],
 ];
 
 const noRecurse = new Set(['NL']);
