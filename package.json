@@ -28,7 +28,7 @@
     "flatbush": "4.4.0",
     "geographiclib-dms": "2.1.1",
     "geographiclib-geodesic": "2.1.1",
-    "pg": "8.13.3",
+    "pg": "8.14.0",
     "xpath": "0.0.34"
   },
   "devDependencies": {
