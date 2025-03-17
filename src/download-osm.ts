@@ -88,6 +88,7 @@ const levels: Record<string, number[] | undefined> = {
   RS: [6],
   DM: [2],
   LC: [2],
+  MK: [6, 7],
 };
 
 const extras: Record<string, number[]> = {
