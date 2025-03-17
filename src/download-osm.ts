@@ -80,7 +80,7 @@ const levels: Record<string, number[] | undefined> = {
   AZ: [4, 5],
   CZ: [6],
   SO: [4, 5],
-  MU: [4, 8],
+  MU: [3, 4, 8],
   AG: [2],
   LK: [5],
   BF: [5],
@@ -113,9 +113,19 @@ const extraExtras: [string, string, number[]][] = [
   ['Dakhla', '-3406823', [4]],
   ['Laayoune', '-2424260', [4]],
   ['Dublin', '-282800', [7]],
+  ['Port Louis', '-3488099', [9]],
 ];
 
 const noRecurse = new Set(['NL']);
+const adminOnly = new Set([
+  'BE',
+  'EE',
+  'HU',
+  'PL',
+  'brussels',
+  'flanders',
+  'wallonia',
+]);
 
 interface TreeEnt {
   parent_boundary_id?: string;
@@ -159,6 +169,10 @@ const downloadOrFetch = async (
     format: 'GeoJSON',
     srid: '4326',
   });
+
+  if (adminOnly.has(iso)) {
+    params.append('boundary', 'administrative');
+  }
 
   console.info('fetching', osm.name_en ?? osm.name, level);
   if (!first) {

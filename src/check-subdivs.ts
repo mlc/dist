@@ -74,7 +74,12 @@ const makeIndex = (input: OsmBoundaries) => {
 const findSubdivs = (p: Coord, subdivs: OsmBoundaries, index: Flatbush) => {
   const [x, y] = getCoord(p);
   const candidates = index.search(x, y, x, y).map((i) => subdivs.features[i]);
-  return candidates.filter((candidate) => booleanPointInPolygon(p, candidate));
+  return {
+    subdivs: candidates.filter((candidate) =>
+      booleanPointInPolygon(p, candidate)
+    ),
+    n: candidates.length,
+  };
 };
 
 const customCleaners: Record<string, RegExp[]> = {
@@ -121,13 +126,14 @@ const customCleaners: Record<string, RegExp[]> = {
   MD: [/ District$/, / Municipality$/, /^Raionul /, /^Municipiul /],
   ME: [/ Municipality$/],
   MM: [/ Region$/, / State$/],
+  MU: [/ District$/],
   MV: [/ Atoll$/],
   NA: [/ Region$/],
   NP: [/ Province$/, / Pradesh$/],
   NZ: [/ District$/],
   OT: [/ District$/],
   OM: [/ Governorate$/],
-  PL: [/ Voivodeship$/],
+  PL: [/ Voivodeship$/, /^województwo /],
   RS: [/ upravni okrug$/, / Administrative District$/],
   RU: [/ ?– ?.*$/, / (Autonomous )?Oblast$/, / Krai$/, /^Republic of /],
   RW: [/ Province$/],
@@ -190,7 +196,7 @@ const main = async () => {
   for (const loc of map.customCoordinates) {
     const taggedSubdiv = loc.extra?.tags?.[0] ?? '';
     const locFeature = point([loc.lng, loc.lat], { subdiv: taggedSubdiv });
-    const subdivs = findSubdivs(locFeature, nat, index);
+    const { subdivs } = findSubdivs(locFeature, nat, index);
     const country = taggedSubdiv.split('_').at(-1)!;
     const matches = subdivs.some((subdiv) =>
       nameMatch(taggedSubdiv, subdiv.properties, country)
