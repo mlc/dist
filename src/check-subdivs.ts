@@ -95,6 +95,7 @@ const customCleaners: Record<string, RegExp[]> = {
   DK: [/^Region /],
   EE: [/ County$/],
   ET: [/ Region$/],
+  GE: [/^Autonomous Republic of /],
   GH: [/ Region$/],
   GT: [/ Department$/],
   HK: [/ District$/],
@@ -115,6 +116,8 @@ const customCleaners: Record<string, RegExp[]> = {
   LK: [/ District$/],
   LR: [/ County$/],
   LS: [/ District$/],
+  LT: [/ County$/, / apskritis$/],
+  LU: [/^Canton /],
   MD: [/ District$/, / Municipality$/, /^Raionul /, /^Municipiul /],
   ME: [/ Municipality$/],
   MM: [/ Region$/, / State$/],
@@ -198,10 +201,11 @@ const main = async () => {
       falses += 1;
     }
     data.push({
-      taggedSubdiv,
+      taggedSubdiv: taggedSubdiv.trim(),
       country,
       subdivs: subdivs
         .map((sd) => sd.properties.name_en ?? sd.properties.name)
+        .toSorted((a, b) => a.localeCompare(b))
         .join('; '),
       matches,
       url:
