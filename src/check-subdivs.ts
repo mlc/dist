@@ -142,6 +142,7 @@ const customCleaners: Record<string, RegExp[]> = {
   SK: [/ kraj$/, /^Region of/],
   SL: [/ (Province|Area)(, Sierra Leone)?$/],
   SN: [/ Region$/],
+  SO: [/\p{Script=Arabic}/gu],
   SY: [/ Governorate$/],
   TG: [/ Region$/],
   TH: [/ Province$/],
