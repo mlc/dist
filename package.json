@@ -15,7 +15,7 @@
   "dependencies": {
     "@fast-csv/format": "5.0.2",
     "@fast-csv/parse": "5.0.2",
-    "@js-joda/core": "5.6.4",
+    "@js-joda/core": "5.6.5",
     "@turf/bbox": "7.2.0",
     "@turf/boolean-point-in-polygon": "7.2.0",
     "@turf/distance": "7.2.0",
