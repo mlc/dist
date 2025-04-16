@@ -495,7 +495,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turf/nearest-point-on-line@npm:^7.2.0":
+"@turf/nearest-point-on-line@npm:7.2.0, @turf/nearest-point-on-line@npm:^7.2.0":
   version: 7.2.0
   resolution: "@turf/nearest-point-on-line@npm:7.2.0"
   dependencies:
@@ -892,6 +892,7 @@ __metadata:
     "@turf/helpers": "npm:7.2.0"
     "@turf/invariant": "npm:7.2.0"
     "@turf/meta": "npm:7.2.0"
+    "@turf/nearest-point-on-line": "npm:7.2.0"
     "@turf/point-to-line-distance": "npm:7.2.0"
     "@types/adm-zip": "npm:0.5.7"
     "@types/geojson": "npm:7946.0.16"

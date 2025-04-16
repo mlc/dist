@@ -6,7 +6,7 @@ import { featureEach } from '@turf/meta';
 import { format } from 'prettier';
 import getData from './getData';
 import { decodeCoord, distance as getDist, formatCoord } from './util';
-import pointToLineDistance from '@turf/point-to-line-distance';
+import nearestPointOnLine from '@turf/nearest-point-on-line';
 
 export interface Props {
   url?: string;
@@ -27,19 +27,17 @@ const decoratePoints = <P extends object>(
   const result: Feature<Point, P & { distance: number; strCoord: string }>[] =
     [];
   featureEach(points, (pt) => {
-    let distance: number;
+    let props: { distance: number; pt?: Point };
     if (Array.isArray(target)) {
-      distance = getDist(target, pt);
+      props = { distance: getDist(target, pt) };
     } else {
-      distance = pointToLineDistance(pt, target, {
-        units: 'kilometers',
-        method: 'geodesic',
-      });
+      const result = nearestPointOnLine(target, pt, { units: 'kilometers' });
+      props = { distance: result.properties.dist, pt: result.geometry };
     }
     result.push(
       point(getCoord(pt), {
         ...pt.properties,
-        distance,
+        ...props,
         strCoord: formatCoord(pt),
       })
     );
