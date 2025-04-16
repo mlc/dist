@@ -416,6 +416,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@turf/bearing@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@turf/bearing@npm:7.2.0"
+  dependencies:
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/invariant": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/970f1a87f9489f8ca812e6f3193dd4da6b7f89a93dfb46e5c4b11b1064db99e56a04917f0e46ea443aff28e30392da529d7db08315c2bcd2d492b9350070b6e5
+  languageName: node
+  linkType: hard
+
 "@turf/boolean-point-in-polygon@npm:7.2.0":
   version: 7.2.0
   resolution: "@turf/boolean-point-in-polygon@npm:7.2.0"
@@ -429,7 +441,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turf/distance@npm:7.2.0":
+"@turf/clone@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@turf/clone@npm:7.2.0"
+  dependencies:
+    "@turf/helpers": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/755fa244e1b1dcb177f0dd054ae48a3d92abca04ded8432c0a403f29658120451f5bdc97d17e094fd2d4e852a20cab3b9a924fc957ce7e59a241f421dfefb2f0
+  languageName: node
+  linkType: hard
+
+"@turf/distance@npm:7.2.0, @turf/distance@npm:^7.2.0":
   version: 7.2.0
   resolution: "@turf/distance@npm:7.2.0"
   dependencies:
@@ -469,6 +492,76 @@ __metadata:
     "@turf/helpers": "npm:^7.2.0"
     "@types/geojson": "npm:^7946.0.10"
   checksum: 10c0/707ed63ba64fe48769806bf2419f5c0cd2ebf821a6467aeffb784ba7ebd6a63ec98d4192b97915948529c00304ed46ddc83842a80714fb1f2018fd4e3c455498
+  languageName: node
+  linkType: hard
+
+"@turf/nearest-point-on-line@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@turf/nearest-point-on-line@npm:7.2.0"
+  dependencies:
+    "@turf/distance": "npm:^7.2.0"
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/invariant": "npm:^7.2.0"
+    "@turf/meta": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/2a2236612db6adbd75337fa35ee89a2acad2897f18f34a55a736bcf313c3d2d1887aa17390580945985e6bc302dce772fd1ed2ce36b1cc299ca48a80ddc2de6e
+  languageName: node
+  linkType: hard
+
+"@turf/point-to-line-distance@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@turf/point-to-line-distance@npm:7.2.0"
+  dependencies:
+    "@turf/bearing": "npm:^7.2.0"
+    "@turf/distance": "npm:^7.2.0"
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/invariant": "npm:^7.2.0"
+    "@turf/meta": "npm:^7.2.0"
+    "@turf/nearest-point-on-line": "npm:^7.2.0"
+    "@turf/projection": "npm:^7.2.0"
+    "@turf/rhumb-bearing": "npm:^7.2.0"
+    "@turf/rhumb-distance": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/2dabee1f300120e9e63e92fa35b621039fbca945cc017f27308eb4ac8c34e48eae43a157d7e1b129643d4678f831c15096e7159f247ace0269ba61695226317b
+  languageName: node
+  linkType: hard
+
+"@turf/projection@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@turf/projection@npm:7.2.0"
+  dependencies:
+    "@turf/clone": "npm:^7.2.0"
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/meta": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/33893789dc362878e900c476196955e7e23866c70a72d49d1b0705a8a02121f25283580d610bdf627a0909ae016bf3864fac93c51c21a5ecefb7749b2e16221d
+  languageName: node
+  linkType: hard
+
+"@turf/rhumb-bearing@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@turf/rhumb-bearing@npm:7.2.0"
+  dependencies:
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/invariant": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/15ac8bbb73201d725e15905aff7ba70f728aa77cb502047d6f06ea61f7ae1deaaa2e99330c03d00cd14440cd0d5cdcb5ddd52b5cb11353f147cb164cd0f75079
+  languageName: node
+  linkType: hard
+
+"@turf/rhumb-distance@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@turf/rhumb-distance@npm:7.2.0"
+  dependencies:
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/invariant": "npm:^7.2.0"
+    "@types/geojson": "npm:^7946.0.10"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/cdda83914535fdacd4bab56e6016442d49824cbe18d3216ffd114b6bfe5501f3780cbbc25c9bd2c4ddcea7f6b2b207104d60cbb05c518f72633f64a3579a2206
   languageName: node
   linkType: hard
 
@@ -799,6 +892,7 @@ __metadata:
     "@turf/helpers": "npm:7.2.0"
     "@turf/invariant": "npm:7.2.0"
     "@turf/meta": "npm:7.2.0"
+    "@turf/point-to-line-distance": "npm:7.2.0"
     "@types/adm-zip": "npm:0.5.7"
     "@types/geojson": "npm:7946.0.16"
     "@types/node": "npm:22.13.14"
