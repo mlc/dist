@@ -27,10 +27,10 @@
     "@xmldom/xmldom": "0.9.8",
     "adm-zip": "0.5.16",
     "d3-geo-voronoi": "2.1.0",
-    "flatbush": "4.4.0",
+    "flatbush": "4.4.1",
     "geographiclib-dms": "2.1.1",
     "geographiclib-geodesic": "2.1.1",
-    "pg": "8.16.0",
+    "pg": "8.16.3",
     "xpath": "0.0.34"
   },
   "devDependencies": {
