@@ -14,3 +14,4 @@ raster2.*
 voronoi.json
 .osmbkey
 osmb/boundaries*
+countries.geojson
