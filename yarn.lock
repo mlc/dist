@@ -42,22 +42,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fast-csv/format@npm:5.0.2":
-  version: 5.0.2
-  resolution: "@fast-csv/format@npm:5.0.2"
+"@fast-csv/format@npm:5.0.5":
+  version: 5.0.5
+  resolution: "@fast-csv/format@npm:5.0.5"
   dependencies:
     lodash.escaperegexp: "npm:^4.1.2"
     lodash.isboolean: "npm:^3.0.3"
-    lodash.isequal: "npm:^4.5.0"
     lodash.isfunction: "npm:^3.0.9"
     lodash.isnil: "npm:^4.0.0"
-  checksum: 10c0/dd31e0d6809a4e8e77e24927da35357aa49018965cbee9040a49af66d3dd0adbcdb4b516f1b2092523ea8d410e17ae55ed3cedeb51743d6869d0476def73f5b9
+  checksum: 10c0/9c61b61799e8f07380eaf67dd93204b3787b1cce73efad761a5b6bc43e58d37e6672ed96c19ce189dd525a5280a700247636d3bc6d3118a33b6209748d72ea4b
   languageName: node
   linkType: hard
 
-"@fast-csv/parse@npm:5.0.2":
-  version: 5.0.2
-  resolution: "@fast-csv/parse@npm:5.0.2"
+"@fast-csv/parse@npm:5.0.5":
+  version: 5.0.5
+  resolution: "@fast-csv/parse@npm:5.0.5"
   dependencies:
     lodash.escaperegexp: "npm:^4.1.2"
     lodash.groupby: "npm:^4.6.0"
@@ -65,7 +64,7 @@ __metadata:
     lodash.isnil: "npm:^4.0.0"
     lodash.isundefined: "npm:^3.0.1"
     lodash.uniq: "npm:^4.5.0"
-  checksum: 10c0/191d5e8f60468700d1b14a799c08c6aeae56da0a4e215c979e08079f767b1487028bc95a02e1deb01d9812ecbba0b628ebc4697c20142e73b7951924c568c06e
+  checksum: 10c0/849610401684e8dc0ed4375b38e514a8fcdc590cd73283688c0ab0f2ca793f29baf1ba4d0a5c189621125635bc2cc3d2083bd0ef56ff3615bd3e7c0f43fe49ec
   languageName: node
   linkType: hard
 
@@ -868,8 +867,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dist@workspace:."
   dependencies:
-    "@fast-csv/format": "npm:5.0.2"
-    "@fast-csv/parse": "npm:5.0.2"
+    "@fast-csv/format": "npm:5.0.5"
+    "@fast-csv/parse": "npm:5.0.5"
     "@js-joda/core": "npm:5.6.5"
     "@swc-node/register": "npm:1.10.10"
     "@swc/core": "npm:1.13.3"
@@ -890,9 +889,9 @@ __metadata:
     "@xmldom/xmldom": "npm:0.9.8"
     adm-zip: "npm:0.5.16"
     d3-geo-voronoi: "npm:2.1.0"
-    flatbush: "npm:4.4.1"
-    geographiclib-dms: "npm:2.1.1"
-    geographiclib-geodesic: "npm:2.1.1"
+    flatbush: "npm:4.5.0"
+    geographiclib-dms: "npm:2.2.0"
+    geographiclib-geodesic: "npm:2.2.0"
     husky: "npm:9.1.7"
     lint-staged: "npm:16.1.2"
     pg: "npm:8.16.3"
@@ -933,33 +932,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flatbush@npm:4.4.1":
-  version: 4.4.1
-  resolution: "flatbush@npm:4.4.1"
+"flatbush@npm:4.5.0":
+  version: 4.5.0
+  resolution: "flatbush@npm:4.5.0"
   dependencies:
-    flatqueue: "npm:^2.0.3"
-  checksum: 10c0/3793ebf695eaaf5322108f664561b85f8dafa53e4b465a697a244bb571d551089ffe68ab31f77685926668aa1255fbdcce958b64a4d64566919fc1b4e4f27410
+    flatqueue: "npm:^3.0.0"
+  checksum: 10c0/e57afbff669a808f98db56e552c8428dd39c3134e4e48a5338f08680773a9c3d90872d6c5523920918ca149248baa22cb68f4a6acae3cf1a26a8a3866f82de04
   languageName: node
   linkType: hard
 
-"flatqueue@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "flatqueue@npm:2.0.3"
-  checksum: 10c0/6ecc53d81b171d60c17dd775f44731e04d4ab4ed4496d5e2b883bdf2fd08d0853d57f1f26d4e33bc41d991a3beed74d18e4eec5d98a82fec30d1918900f1631f
+"flatqueue@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "flatqueue@npm:3.0.0"
+  checksum: 10c0/585f4f2c6c3d080b9ef32318258984c5602fb94990886e53c8cf1272ed3629efd64157b1f06b9f0c584b3dc79da547279246027c282ac07e3199ec490dc7c91d
   languageName: node
   linkType: hard
 
-"geographiclib-dms@npm:2.1.1":
-  version: 2.1.1
-  resolution: "geographiclib-dms@npm:2.1.1"
-  checksum: 10c0/0be83cbc0875dbec89c821da2327f23461161dfce2816db72d63ba6909b922243e38dd8a85061e535bb146423951db46e30a07443b37bf6384e649641168d7ad
+"geographiclib-dms@npm:2.2.0":
+  version: 2.2.0
+  resolution: "geographiclib-dms@npm:2.2.0"
+  checksum: 10c0/5bbf4ce49b25fe2edfd702ea319a34052320fe418654ee05006e9b3b1383d365b600598d7f458b60b9b5791b262f5d8acae6b188158f62748f1dd3598bae77f0
   languageName: node
   linkType: hard
 
-"geographiclib-geodesic@npm:2.1.1":
-  version: 2.1.1
-  resolution: "geographiclib-geodesic@npm:2.1.1"
-  checksum: 10c0/9a79d24a3a95d9bdc53499e35983ae717b48459d58a79279313df309570d342c6fbcca4b274b068d3ff39d8bf3080bce7c48c9c795641f46918241951226e30b
+"geographiclib-geodesic@npm:2.2.0":
+  version: 2.2.0
+  resolution: "geographiclib-geodesic@npm:2.2.0"
+  checksum: 10c0/ae617eb33cbb859f6425de4e21a046427e0a360f1eaead00dcc25537a8fbecdbcc92910f592cc575e87d5ce949bd8d4f29db2ee2370680622b0ecdd7793e190a
   languageName: node
   linkType: hard
 
@@ -1068,13 +1067,6 @@ __metadata:
   version: 3.0.3
   resolution: "lodash.isboolean@npm:3.0.3"
   checksum: 10c0/0aac604c1ef7e72f9a6b798e5b676606042401dd58e49f051df3cc1e3adb497b3d7695635a5cbec4ae5f66456b951fdabe7d6b387055f13267cde521f10ec7f7
-  languageName: node
-  linkType: hard
-
-"lodash.isequal@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "lodash.isequal@npm:4.5.0"
-  checksum: 10c0/dfdb2356db19631a4b445d5f37868a095e2402292d59539a987f134a8778c62a2810c2452d11ae9e6dcac71fc9de40a6fedcb20e2952a15b431ad8b29e50e28f
   languageName: node
   linkType: hard
 
