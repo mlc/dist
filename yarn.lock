@@ -645,12 +645,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.18.0":
-  version: 22.18.0
-  resolution: "@types/node@npm:22.18.0"
+"@types/node@npm:*, @types/node@npm:22.18.1":
+  version: 22.18.1
+  resolution: "@types/node@npm:22.18.1"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/02cce4493eee8408e66e76fcad164f33c0600ed0854ad08e5519a76a06402da5b589b278cf71bc975c9e014f2668bdf758bc3be7fed63bdbfd0900495372797c
+  checksum: 10c0/1912b0ea6cb9ef59722b0fed64652388e13b41d52569c16198f1278a882837bbf4c8a4ec913e852893356f07c0c44b4e00fbca289ac7222741d03449104e22fe
   languageName: node
   linkType: hard
 
@@ -741,7 +741,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^5.5.0":
+"chalk@npm:^5.6.0":
   version: 5.6.0
   resolution: "chalk@npm:5.6.0"
   checksum: 10c0/f8558fc12fd9805f167611803b325b0098bbccdc9f1d3bafead41c9bac61f263357f3c0df0cbe28bc2fd5fca3edcf618b01d6771a5a776b4c15d061482a72b23
@@ -940,7 +940,7 @@ __metadata:
     "@turf/point-to-line-distance": "npm:7.2.0"
     "@types/adm-zip": "npm:0.5.7"
     "@types/geojson": "npm:7946.0.16"
-    "@types/node": "npm:22.18.0"
+    "@types/node": "npm:22.18.1"
     "@types/pg": "npm:8.15.5"
     "@xmldom/xmldom": "npm:0.9.8"
     adm-zip: "npm:0.5.16"
@@ -949,7 +949,7 @@ __metadata:
     geographiclib-dms: "npm:2.2.0"
     geographiclib-geodesic: "npm:2.2.0"
     husky: "npm:9.1.7"
-    lint-staged: "npm:16.1.5"
+    lint-staged: "npm:16.1.6"
     pg: "npm:8.16.3"
     prettier: "npm:3.6.2"
     ts-node: "npm:10.9.2"
@@ -1071,15 +1071,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:16.1.5":
-  version: 16.1.5
-  resolution: "lint-staged@npm:16.1.5"
+"lint-staged@npm:16.1.6":
+  version: 16.1.6
+  resolution: "lint-staged@npm:16.1.6"
   dependencies:
-    chalk: "npm:^5.5.0"
+    chalk: "npm:^5.6.0"
     commander: "npm:^14.0.0"
     debug: "npm:^4.4.1"
     lilconfig: "npm:^3.1.3"
-    listr2: "npm:^9.0.1"
+    listr2: "npm:^9.0.3"
     micromatch: "npm:^4.0.8"
     nano-spawn: "npm:^1.0.2"
     pidtree: "npm:^0.6.0"
@@ -1087,11 +1087,11 @@ __metadata:
     yaml: "npm:^2.8.1"
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 10c0/771e7be871f1d74ed09ef4e4eae5f835ed962965db7709be26cccf71bef8fed34f8d5d92f193b2a6fad32c12d955850aa74008e6180fabea8a7a6666cba2ac39
+  checksum: 10c0/e695edfec7e330f2c7cd0bb0e56220aa95d3b3655fe64a87a02140609a3594df67e1ea7abc2cc4ce69aa010418e406b1b24703ba4bd026c873a5b43a5ab16c6a
   languageName: node
   linkType: hard
 
-"listr2@npm:^9.0.1":
+"listr2@npm:^9.0.3":
   version: 9.0.3
   resolution: "listr2@npm:9.0.3"
   dependencies:
