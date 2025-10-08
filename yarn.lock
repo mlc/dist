@@ -950,6 +950,7 @@ __metadata:
     geographiclib-geodesic: "npm:2.2.0"
     husky: "npm:9.1.7"
     lint-staged: "npm:16.1.6"
+    mnemonist: "npm:0.40.3"
     pg: "npm:8.16.3"
     prettier: "npm:3.6.2"
     ts-node: "npm:10.9.2"
@@ -1191,6 +1192,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mnemonist@npm:0.40.3":
+  version: 0.40.3
+  resolution: "mnemonist@npm:0.40.3"
+  dependencies:
+    obliterator: "npm:^2.0.4"
+  checksum: 10c0/8c061d692dc4c45b04045e710e696f94ce6ea819769ed378636523e021ae2bb397945513e9265757b6f2fd29713b7315bc6bb74452df5508fc270bf49f1d1636
+  languageName: node
+  linkType: hard
+
 "ms@npm:^2.1.3":
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
@@ -1211,6 +1221,13 @@ __metadata:
   bin:
     napi-postinstall: lib/cli.js
   checksum: 10c0/3f3297c002abd1f1c64730c442e9047e4b50335666bd2821e990e0546ab917f9cd000d3837930a81dbe89075495e884ed526918a85667abeef0654f659217cea
+  languageName: node
+  linkType: hard
+
+"obliterator@npm:^2.0.4":
+  version: 2.0.5
+  resolution: "obliterator@npm:2.0.5"
+  checksum: 10c0/36e67d88271c51aa6412a7d449d6c60ae6387176f94dbc557eea67456bf6ccedbcbcecdb1e56438aa4f4694f68f531b3bf2be87b019e2f69961b144bec124e70
   languageName: node
   linkType: hard
 
