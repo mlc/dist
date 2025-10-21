@@ -645,12 +645,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.18.10":
-  version: 22.18.10
-  resolution: "@types/node@npm:22.18.10"
+"@types/node@npm:*, @types/node@npm:22.18.12":
+  version: 22.18.12
+  resolution: "@types/node@npm:22.18.12"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/37b34553f1953ab8fc25b7467d44701446400f62547adb62c842cebac091350985470aeed87acd60f5295778c370d9721d477310e643677a7eab03a8dc6ed74f
+  checksum: 10c0/13a4638f2baba3efba2b8bc369dd6f950dccbfca78f318f9c9f2c7adc11fce14fc119723c38567dada2d57a873c092b7356c024924d5974a08f3c1f93dc706c6
   languageName: node
   linkType: hard
 
@@ -933,7 +933,7 @@ __metadata:
     "@turf/point-to-line-distance": "npm:7.2.0"
     "@types/adm-zip": "npm:0.5.7"
     "@types/geojson": "npm:7946.0.16"
-    "@types/node": "npm:22.18.10"
+    "@types/node": "npm:22.18.12"
     "@types/pg": "npm:8.15.5"
     "@xmldom/xmldom": "npm:0.9.8"
     adm-zip: "npm:0.5.16"
@@ -942,7 +942,7 @@ __metadata:
     geographiclib-dms: "npm:2.2.0"
     geographiclib-geodesic: "npm:2.2.0"
     husky: "npm:9.1.7"
-    lint-staged: "npm:16.2.4"
+    lint-staged: "npm:16.2.5"
     mnemonist: "npm:0.40.3"
     pg: "npm:8.16.3"
     prettier: "npm:3.6.2"
@@ -1051,9 +1051,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:16.2.4":
-  version: 16.2.4
-  resolution: "lint-staged@npm:16.2.4"
+"lint-staged@npm:16.2.5":
+  version: 16.2.5
+  resolution: "lint-staged@npm:16.2.5"
   dependencies:
     commander: "npm:^14.0.1"
     listr2: "npm:^9.0.4"
@@ -1064,7 +1064,7 @@ __metadata:
     yaml: "npm:^2.8.1"
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 10c0/101b32040b9601938a7da6aa58195ce5a1f7a1a96998e8f700c219d9a1070e0f87ade9289d85ff8041a5f901252e834411c7e4f35538593678ed304ba2c58eba
+  checksum: 10c0/debe2815d9c20c675eb8063f7ad0ce4a94e828832d975b0d8ad7d464e3ee387120056e0e0deaa7bd23a4849edfdc28c9c4f32e99a40746509ba3b76fd78e175a
   languageName: node
   linkType: hard
 
