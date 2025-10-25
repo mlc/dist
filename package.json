@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@swc-node/register": "1.11.1",
-    "@swc/core": "1.13.5",
+    "@swc/core": "1.13.21",
     "@swc/helpers": "0.5.17",
     "@tsconfig/node22": "22.0.2",
     "@types/adm-zip": "0.5.7",
@@ -44,7 +44,7 @@
     "@types/node": "22.18.12",
     "@types/pg": "8.15.5",
     "husky": "9.1.7",
-    "lint-staged": "16.2.5",
+    "lint-staged": "16.2.6",
     "prettier": "3.6.2",
     "ts-node": "10.9.2",
     "typescript": "5.9.3"
