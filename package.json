@@ -15,7 +15,7 @@
   "dependencies": {
     "@fast-csv/format": "5.0.5",
     "@fast-csv/parse": "5.0.5",
-    "@js-joda/core": "5.6.5",
+    "@js-joda/core": "6.1.0",
     "@turf/bbox": "7.2.0",
     "@turf/boolean-point-in-polygon": "7.2.0",
     "@turf/distance": "7.2.0",
@@ -38,13 +38,13 @@
     "@swc-node/register": "1.11.1",
     "@swc/core": "1.13.5",
     "@swc/helpers": "0.5.17",
-    "@tsconfig/node22": "22.0.2",
+    "@tsconfig/node24": "24.0.0",
     "@types/adm-zip": "0.5.7",
     "@types/geojson": "7946.0.16",
-    "@types/node": "22.18.12",
+    "@types/node": "24.13.3",
     "@types/pg": "8.15.5",
     "husky": "9.1.7",
-    "lint-staged": "16.2.5",
+    "lint-staged": "17.4.1",
     "prettier": "3.6.2",
     "ts-node": "10.9.2",
     "typescript": "5.9.3"
@@ -52,5 +52,5 @@
   "lint-staged": {
     "*.{js,css,md,ts,json}": "prettier --write"
   },
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.18.0"
 }
