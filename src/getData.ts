@@ -17,8 +17,8 @@ const getMtime = (fn: string): Promise<number | null> =>
     (e) => ('code' in e && e.code === 'ENOENT' ? null : Promise.reject(e))
   );
 
-const read = async (): Promise<Data> => {
-  const data = await readFile(jsonFilename, 'utf-8');
+const read = async (fn = jsonFilename): Promise<Data> => {
+  const data = await readFile(fn, 'utf-8');
   return JSON.parse(data) as Data;
 };
 
@@ -67,7 +67,10 @@ const parse = async (): Promise<Data> => {
   );
 };
 
-const getData = async (): Promise<Data> => {
+const getData = async (fn?: string): Promise<Data> => {
+  if (fn) {
+    return read(fn);
+  }
   const [jsonTs, xmlTs] = await Promise.all(
     [jsonFilename, xmlFilename].map(getMtime)
   );

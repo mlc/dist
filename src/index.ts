@@ -50,14 +50,20 @@ const main = async () => {
   if (argc < 3) {
     throw new Error('provide coords pls');
   }
-  const p = await getData();
-  const targets = process.argv.slice(2).map(decodeCoord);
+  let fn: string | undefined;
+  if (argc > 3 || process.argv[2]?.endsWith('json')) {
+    fn = process.argv[2];
+  }
+  const p = await getData(fn);
+  const targets = process.argv.slice(fn ? 3 : 2).map(decodeCoord);
   const points = decoratePoints(targets, p).features.sort(
     ({ properties: { distance: a } }, { properties: { distance: b } }) => a - b
   );
-  await format(JSON.stringify(points), { parser: 'json' }).then((txt) =>
-    writeFile('sorted.json', txt)
-  );
+  if (!fn) {
+    await format(JSON.stringify(points), { parser: 'json' }).then((txt) =>
+      writeFile('sorted.json', txt)
+    );
+  }
   return points[0];
 };
 

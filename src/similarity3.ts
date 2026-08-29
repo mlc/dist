@@ -1,3 +1,4 @@
+import { readFile } from 'node:fs/promises';
 import { writeToPath } from '@fast-csv/format';
 import { parseFile } from '@fast-csv/parse';
 
@@ -47,6 +48,10 @@ const main = async () => {
   const rows = await readCsv();
   const locs = parseLocs(rows);
   const result: object[] = [];
+  //const med = JSON.parse(await readFile('/home/mlc/Download/Median_TMC_submission.txt', 'utf-8'));
+  //locs.set('median', new Set(med.groups['#cc3333'].paths));
+
+  console.log(locs.get('median').size);
 
   for (const [name1, terrs1] of locs) {
     const row: Record<string, string | number> = { name: name1 };

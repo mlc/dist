@@ -20,10 +20,10 @@ interface VProps {
 
 const main = async () => {
   const { geoVoronoi } = await import('d3-geo-voronoi');
-  //const data = await getData();
-  const data: FeatureCollection<Polygon> = JSON.parse(
-    await readFile('centroids.json', 'utf-8')
-  );
+  const data = await getData();
+  //const data: FeatureCollection<Polygon> = JSON.parse(
+  //  await readFile('centroids.json', 'utf-8')
+  //);
   const voronoi = geoVoronoi(data).polygons();
   return voronoi;
 
