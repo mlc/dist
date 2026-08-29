@@ -92,10 +92,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@js-joda/core@npm:5.6.5":
-  version: 5.6.5
-  resolution: "@js-joda/core@npm:5.6.5"
-  checksum: 10c0/bad9d67736eb7dfbc99f09b2f485c63c4d64cad2661648be88028e777f93769767c41d6019c0a35ba6f55a1b9846666f3528ae8746496a9f1ed9b60eade174be
+"@js-joda/core@npm:6.1.0":
+  version: 6.1.0
+  resolution: "@js-joda/core@npm:6.1.0"
+  checksum: 10c0/7713d867e08f3f57e368a38820fbdfebe848cb073cf405edfe2ad04c9fcf55d664b07ed331ffd775a4f192aa7888588a4718ca827e29d58c0be093eec1d6c40d
   languageName: node
   linkType: hard
 
@@ -918,7 +918,7 @@ __metadata:
   dependencies:
     "@fast-csv/format": "npm:5.0.5"
     "@fast-csv/parse": "npm:5.0.5"
-    "@js-joda/core": "npm:5.6.5"
+    "@js-joda/core": "npm:6.1.0"
     "@swc-node/register": "npm:1.11.1"
     "@swc/core": "npm:1.13.5"
     "@swc/helpers": "npm:0.5.17"
