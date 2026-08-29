@@ -51,7 +51,7 @@ const main = async () => {
     throw new Error('provide coords pls');
   }
   let fn: string | undefined;
-  if (argc > 3 || process.argv[2]?.endsWith('json')) {
+  if (argc > 3 && process.argv[2]?.endsWith('json')) {
     fn = process.argv[2];
   }
   const p = await getData(fn);
