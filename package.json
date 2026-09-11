@@ -36,15 +36,15 @@
   },
   "devDependencies": {
     "@swc-node/register": "1.12.1",
-    "@swc/core": "1.16.1",
+    "@swc/core": "1.16.2",
     "@swc/helpers": "0.5.23",
     "@tsconfig/node24": "24.0.5",
     "@types/adm-zip": "0.5.8",
     "@types/geojson": "7946.0.16",
-    "@types/node": "24.13.3",
+    "@types/node": "24.13.4",
     "@types/pg": "8.23.1",
     "husky": "9.1.7",
-    "lint-staged": "17.4.1",
+    "lint-staged": "17.5.1",
     "prettier": "3.9.6",
     "ts-node": "10.9.2",
     "typescript": "5.9.3"
