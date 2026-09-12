@@ -25,7 +25,7 @@
     "@turf/nearest-point-on-line": "7.4.0",
     "@turf/point-to-line-distance": "7.4.0",
     "@xmldom/xmldom": "0.9.12",
-    "adm-zip": "0.6.0",
+    "adm-zip": "0.6.1",
     "d3-geo-voronoi": "2.1.0",
     "flatbush": "4.6.2",
     "geographiclib-dms": "2.2.0",
