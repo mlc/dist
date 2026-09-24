@@ -844,10 +844,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"adm-zip@npm:0.6.0":
-  version: 0.6.0
-  resolution: "adm-zip@npm:0.6.0"
-  checksum: 10c0/440f37590c62255226f1db4cb1a5a618879347f5106ad5b9a24c67c20f9a54bd5b4efcd2b35af858e39c7885d05f4bd35f4c2f42378c98d13f779be380bc9ae4
+"adm-zip@npm:0.6.1":
+  version: 0.6.1
+  resolution: "adm-zip@npm:0.6.1"
+  checksum: 10c0/78233c6fbfd418dd605ef3c4c6a656406a49f81f716f2850d565f5e55915f18b99f4fdaf15436d77c73536da0915eeca33adab8055872a983b0ac7d07664cd25
   languageName: node
   linkType: hard
 
@@ -1034,14 +1034,14 @@ __metadata:
     "@types/node": "npm:24.13.3"
     "@types/pg": "npm:8.23.1"
     "@xmldom/xmldom": "npm:0.9.12"
-    adm-zip: "npm:0.6.0"
+    adm-zip: "npm:0.6.1"
     d3-geo-voronoi: "npm:2.1.0"
     flatbush: "npm:4.6.2"
     geographiclib-dms: "npm:2.2.0"
     geographiclib-geodesic: "npm:2.2.0"
     husky: "npm:9.1.7"
     lint-staged: "npm:17.4.1"
-    mnemonist: "npm:0.40.4"
+    mnemonist: "npm:0.40.5"
     pg: "npm:8.23.0"
     prettier: "npm:3.9.6"
     ts-node: "npm:10.9.2"
@@ -1148,12 +1148,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mnemonist@npm:0.40.4":
-  version: 0.40.4
-  resolution: "mnemonist@npm:0.40.4"
+"mnemonist@npm:0.40.5":
+  version: 0.40.5
+  resolution: "mnemonist@npm:0.40.5"
   dependencies:
     obliterator: "npm:^2.0.4"
-  checksum: 10c0/06bb84023d641d2103e147f041ce17de43f1ef289808a2822b41d28a0bafde52cc58d77ff68fbf4e867782b713be3c0fcf940fd59acb0a5b0b2f25d580371814
+  checksum: 10c0/e66ea410277e6ec3d170d9c4f8890bf22c75bfdc7cf53879a235ce961b76768165a6bd7bfe40105203d8e00e721861b2259e98a2c09369cfd9cec37ae87d2379
   languageName: node
   linkType: hard
 
