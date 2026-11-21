@@ -607,10 +607,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node24@npm:24.0.5":
-  version: 24.0.5
-  resolution: "@tsconfig/node24@npm:24.0.5"
-  checksum: 10c0/cea0c13ac00121e210f69823104d69081c99cf98c801a0772b6df5b51b3412e188084d74b6d2a42b33f29e3cf99298faf02c0baed41d336f5ef8828cc04d458f
+"@tsconfig/node26@npm:26.0.0":
+  version: 26.0.0
+  resolution: "@tsconfig/node26@npm:26.0.0"
+  checksum: 10c0/ac63ed4711b2b809957e45a97524bff2960a9662292caad253ec5577eb1ea35d3793a8b85ba6d308c5d6b21c117c7ab81c65cdf409ca0f6891129b73f3d10a66
   languageName: node
   linkType: hard
 
@@ -1020,7 +1020,7 @@ __metadata:
     "@swc-node/register": "npm:1.12.1"
     "@swc/core": "npm:1.16.1"
     "@swc/helpers": "npm:0.5.23"
-    "@tsconfig/node24": "npm:24.0.5"
+    "@tsconfig/node26": "npm:26.0.0"
     "@turf/bbox": "npm:7.4.0"
     "@turf/boolean-point-in-polygon": "npm:7.4.0"
     "@turf/distance": "npm:7.4.0"
